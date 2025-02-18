@@ -14,9 +14,10 @@
       gap: 40px;
 
       .logo {
-        padding: 16px 12px;
+        max-height: 72px;
+        margin: 16px 12px;
         @media screen and (min-width: 768px) {
-          padding: 16px 0 16px 90px;
+          margin: 16px 0 16px 90px;
         }
       }
 
@@ -27,7 +28,9 @@
         text-wrap: wrap;
         width: 150px;
         padding-top: 24px;
-        @media screen and (max-width: 799px){display: none}
+        @media screen and (max-width: 799px) {
+          display: none
+        }
       }
     }
   }
@@ -39,15 +42,24 @@
     flex-direction: row;
     gap: 40px;
     align-items: center;
+    @media screen and (max-width: 768px) {
+      padding-right: 0;
+    }
 
-    .calls, .languages, .signIn{display: none}
+    .calls, .languages, .signIn {
+      display: none
+    }
+
     @media screen and (min-width: 768px) {
-
+      padding-right: 0;
       .calls {
         display: flex;
         flex-direction: column;
         gap: 2px;
-        @media screen and (max-width: 1023px){display: none}
+        @media screen and (max-width: 1023px) {
+          display: none
+        }
+
         .calls-top {
           display: flex;
           flex-direction: row;
@@ -81,6 +93,7 @@
         }
       }
       .languages {
+        display: unset;
 
         .language {
           color: white;
@@ -103,6 +116,7 @@
         }
       }
       .signIn {
+        display: unset;
         color: white;
         box-sizing: border-box;
         border: white 1px solid;
@@ -116,7 +130,7 @@
     }
 
     .header__buttons {
-      padding: 32px 12px;
+      padding: 0 12px;
       display: flex;
       flex-direction: row;
       gap: 12px;

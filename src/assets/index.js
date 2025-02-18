@@ -7,6 +7,7 @@ import cart from './svg/shopCart.svg';
 import menu from './svg/menu.svg';
 import phone from './svg/phone.svg';
 import arrowDown from './svg/arrowdn.svg';
+import closeBtn from './svg/close.svg';
 
 //socials
 import facebook from './svg/fb.svg'
@@ -58,5 +59,7 @@ export {
   snack,
   dessert,
   menu,
-  phone, arrowDown
+  phone,
+  arrowDown,
+  closeBtn
 };

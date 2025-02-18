@@ -55,7 +55,7 @@ const Footer = () => {
           <div className="footer__links">
             {links.map((link) => {
               return (
-                <Link className={"footer__link"} key={link.link} to={link.link}>{link.title}</Link>
+                <Link className={"footer__link"} key={link.title} to={link.link}>{link.title}</Link>
               );
             })}
           </div>

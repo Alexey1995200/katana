@@ -1,6 +1,8 @@
 import {arrowDown, cart, headerBG, logo, menu, phone} from "../../../assets";
 import './styles.scss'
 import MenuCategoryList from "../MenuCategoryList";
+import React from "react";
+import {SidebarMenu} from "./sidebarMenu";
 
 interface ILang {
   title: string,
@@ -44,39 +46,48 @@ const languages: ILang[] = [
 
 
 const Header = () => {
+  const [isMenuOpened, setIsMenuOpened] = React.useState(false);
   return (
-    <div className="header" style={{backgroundImage: `url(${headerBG})`}}>
-      <div className="header-main">
-        <div className="header-left">
-          <img src={logo} alt="logo" className="logo"/>
-          <span>Food Delivery in Kharkiv</span>
-        </div>
-        <div className="header-right">
-          <div className="header__buttons">
-            <img src={cart} alt="cart"/>
-            <img src={menu} alt="menu"/>
+    <>
+      {isMenuOpened &&
+        <SidebarMenu
+          setIsMenuOpened={setIsMenuOpened}
+        />}
+      <div className="header" style={{backgroundImage: `url(${headerBG})`}}>
+        <div className="header-main">
+          <div className="header-left">
+            <img src={logo} alt="logo" className="logo"/>
+            <span>Food Delivery in Kharkiv</span>
           </div>
-          <div className="calls">
-            <div className="calls-top">
-              <img src={phone} alt="" className="phone"/>
-              <span className="numer">+38 (095) 123-45-67</span>
-              <img src={arrowDown} alt="˅" className="arrow"/>
+          <div className="header-right">
+            <div className="header__buttons">
+              <img src={cart} alt="cart"/>
+              <img src={menu} alt="menu" onClick={() => {
+                setIsMenuOpened(true)
+              }}/>
             </div>
-            <span className="time">Call between 11:00 and 23:00</span>
+            <div className="calls">
+              <div className="calls-top">
+                <img src={phone} alt="" className="phone"/>
+                <span className="numer">+38 (095) 123-45-67</span>
+                <img src={arrowDown} alt="˅" className="arrow"/>
+              </div>
+              <span className="time">Call between 11:00 and 23:00</span>
+            </div>
+            <div className="languages">
+              {languages.map((lang: ILang) => {
+                return (<span title={lang.title} key={lang.ISO6392} className="language">{lang.ISO6391}</span>)
+              })}
+            </div>
+            <button className="signIn">
+              signIn
+            </button>
           </div>
-          <div className="languages">
-            {languages.map((lang: ILang) => {
-              return (<span title={lang.title} key={lang.ISO6392} className="language">{lang.ISO6391}</span>)
-            })}
-          </div>
-          <button className="signIn">
-            signIn
-          </button>
-        </div>
 
+        </div>
+        <MenuCategoryList/>
       </div>
-      <MenuCategoryList/>
-    </div>
+    </>
   )
 }
 export default Header
