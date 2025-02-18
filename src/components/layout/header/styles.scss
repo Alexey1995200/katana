@@ -1,0 +1,132 @@
+.header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+  .header-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .header-left {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+
+      .logo {
+        padding: 16px 12px;
+        @media screen and (min-width: 768px) {
+          padding: 16px 0 16px 90px;
+        }
+      }
+
+      span {
+        font-family: Oswald, sans-serif;
+        font-size: 20px;
+        line-height: 140%;
+        text-wrap: wrap;
+        width: 150px;
+        padding-top: 24px;
+        @media screen and (max-width: 799px){display: none}
+      }
+    }
+  }
+
+  .header-right {
+    padding-right: 80px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+
+    .calls, .languages, .signIn{display: none}
+    @media screen and (min-width: 768px) {
+
+      .calls {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        @media screen and (max-width: 1023px){display: none}
+        .calls-top {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 2px;
+
+          .phone {
+            height: 24px;
+            width: 24px;
+          }
+
+          .number {
+            color: white;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 140%;
+          }
+
+          .arrow {
+            margin: 4px;
+            width: 8px;
+            height: 4px;
+          }
+        }
+
+        .time {
+          color: rgba(255, 255, 255, 0.5);
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 140%;
+        }
+      }
+      .languages {
+
+        .language {
+          color: white;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 140%;
+          padding: 10px;
+          height: 16px;
+          border-right: rgba(255, 255, 255, 0.8) 1px solid;
+          text-transform: uppercase;
+
+          &:first-child {
+            padding-left: 0;
+          }
+
+          &:last-child {
+            border-right: none;
+            padding-right: 0;
+          }
+        }
+      }
+      .signIn {
+        color: white;
+        box-sizing: border-box;
+        border: white 1px solid;
+        border-radius: 80px;
+        padding: 10px 16px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 140%;
+
+      }
+    }
+
+    .header__buttons {
+      padding: 32px 12px;
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+
+}
+
+
