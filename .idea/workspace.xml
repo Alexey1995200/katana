@@ -5,33 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="179b2a66-1950-40e6-8db9-40d8811725cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/png/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/5s.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/arrMore.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/info.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/map.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/new.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/spicy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/button/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/button/styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttonBorder/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttonBorder/styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/const.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/interface.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Main/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Main/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/svg/arrowdn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/arrowDown.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/MenuCategoryList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/MenuCategoryList/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/footer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/footer/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/footer/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/header/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/header/sidebarMenu/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/header/sidebarMenu/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/header/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/header/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Main/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +97,7 @@
       <workItem from="1739895057222" duration="8755000" />
       <workItem from="1739903912322" duration="489000" />
       <workItem from="1739904615145" duration="24421000" />
-      <workItem from="1740210237862" duration="26607000" />
+      <workItem from="1740210237862" duration="29033000" />
     </task>
     <servers />
   </component>

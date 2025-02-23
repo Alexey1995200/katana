@@ -255,13 +255,14 @@
 
   &.alt {
     width: auto;
-    flex: 1
+    flex: 1;
   }
 
   @media screen and (max-width: 860px) {
     flex-direction: column;
     width: auto;
     height: 324px;
+    gap: 16px;
   }
 }
 

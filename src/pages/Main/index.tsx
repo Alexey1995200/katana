@@ -7,12 +7,10 @@ import {Button} from "../../components/button";
 import {ButtonBorder} from "../../components/buttonBorder";
 
 
-const isMobileView = window.innerWidth < window.innerHeight;  // or use userAgent
-const getFoodCount = () => {
-  const width = window.innerWidth;
-  if (isMobileView) {
+const getFoodCount = (width:number) => {
+  if (width < 768) {
     return 4;
-  } else if (width < 860) {
+  } else if (width < 860 && width > 768) {
     return 1;
   } else if (width < 1240) {
     return 2;
@@ -24,14 +22,17 @@ const getFoodCount = () => {
 };
 
 const Main = () => {
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth < 768);
   const [newFoodCurrentPage, setNewFoodCurrentPage] = useState(0)
   const [chefsFoodCurrentPage, setChefsFoodCurrentPage] = useState(0)
-  const [foodPerPage, setFoodPerPage] = useState(getFoodCount())
+  const [foodPerPage, setFoodPerPage] = useState(getFoodCount(window.innerWidth))
   const [isTextFull, setIsTextFull] = useState(false)
-
   useEffect(() => {
     const handleResize = () => {
-      setFoodPerPage(getFoodCount());
+      const newWidth = window.innerWidth;
+      setFoodPerPage(getFoodCount(newWidth));
+      setIsMobileView(window.innerWidth < 768);
+      console.log("isMobileView updated:", window.innerWidth < 768);
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -162,13 +163,21 @@ const Main = () => {
                     {food.isNew && <img src={newIco} alt="" className="filteredFood__tag"/>}
                     {food.isSpicy && <img src={spicyIco} alt="" className="filteredFood__tag"/>}
                   </div>
-                  <div className="food__details">
-                    <p className="food__title">{food.title}</p>
-                    <p className="food__desc">
-                      {food.weight && <span className="food__weight">{food.weight}g.</span>}
-                      {food.weight && ' - '}
-                      {food.description}</p>
-                  </div>
+                  {!isMobileView ?
+                    <div className="food__details">
+                      <p className="food__title">{food.title}</p>
+                      <p className="food__desc">
+                        {food.weight && <span className="food__weight">{food.weight}g.</span>}
+                        {food.weight && ' - '}
+                        {food.description}</p>
+                    </div> :
+                    <div className="food__details">
+                      <p className="food__title">{food.title}</p>
+                      <img src={information}
+                           alt=""
+                           style={{height: "20px"}}
+                           onClick={() => null}/>
+                    </div>}
                 </div>
                 <div className="food__buy">
                   <div className="food__price">
