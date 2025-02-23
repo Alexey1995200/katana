@@ -21,7 +21,7 @@
         }
       }
 
-      span {
+      p {
         font-family: Oswald, sans-serif;
         font-size: 20px;
         line-height: 140%;
@@ -93,7 +93,8 @@
         }
       }
       .languages {
-        display: unset;
+        display: flex;
+        justify-content: center;
 
         .language {
           color: white;
@@ -104,6 +105,8 @@
           height: 16px;
           border-right: rgba(255, 255, 255, 0.8) 1px solid;
           text-transform: uppercase;
+          display: flex;
+          align-items: center;
 
           &:first-child {
             padding-left: 0;

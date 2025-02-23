@@ -5,13 +5,14 @@ import './clean_style.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Layout from "./components/layout";
 import {ErrorPage} from "./components/err";
+import Main from "./pages/Main";
 
 const router = createBrowserRouter([
   {
     element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
-      // { path: "/", element: <MainMenu /> },
+      { path: "/", element: <Main /> },
       // { path: "about", element: <AboutUs /> },
       // { path: "blog", element: <Blog /> },
       // {

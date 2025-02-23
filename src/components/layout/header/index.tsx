@@ -57,7 +57,7 @@ const Header = () => {
         <div className="header-main">
           <div className="header-left">
             <img src={logo} alt="logo" className="logo"/>
-            <span>Food Delivery in Kharkiv</span>
+            <p>Food Delivery in Kharkiv</p>
           </div>
           <div className="header-right">
             <div className="header__buttons">
@@ -69,14 +69,14 @@ const Header = () => {
             <div className="calls">
               <div className="calls-top">
                 <img src={phone} alt="" className="phone"/>
-                <span className="numer">+38 (095) 123-45-67</span>
+                <p className="numer">+38 (095) 123-45-67</p>
                 <img src={arrowDown} alt="˅" className="arrow"/>
               </div>
-              <span className="time">Call between 11:00 and 23:00</span>
+              <p className="time">Call between 11:00 and 23:00</p>
             </div>
             <div className="languages">
               {languages.map((lang: ILang) => {
-                return (<span title={lang.title} key={lang.ISO6392} className="language">{lang.ISO6391}</span>)
+                return (<p title={lang.title} key={lang.ISO6392} className="language">{lang.ISO6391}</p>)
               })}
             </div>
             <button className="signIn">

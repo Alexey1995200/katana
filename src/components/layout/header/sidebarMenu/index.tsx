@@ -52,9 +52,9 @@ export const SidebarMenu: React.FC<SidebarMenuProps> = ({setIsMenuOpened}) => {
       <div className="sidebarMenu__footer">
           <div className="sidebarMenu__footer-top">
             <img src={phone} alt="" className="sidebarMenu__footer-phone"/>
-            <span className="sidebarMenu__footer-number">+38 (095) 123-45-67</span>
+            <p className="sidebarMenu__footer-number">+38 (095) 123-45-67</p>
           </div>
-          <span className="sidebarMenu__footer-time">Call between 11:00 and 23:00</span>
+          <p className="sidebarMenu__footer-time">Call between 11:00 and 23:00</p>
       </div>
     </div>
   )

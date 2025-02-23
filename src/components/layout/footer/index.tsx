@@ -51,7 +51,7 @@ const Footer = () => {
     <div className="footer" style={{backgroundImage: `url(${bg})`, backgroundRepeat: 'repeat'}}>
       <div className="footer__body">
         <div className="footer__about">
-          <span className="h3">About KATANA</span>
+          <p className="h3">About KATANA</p>
           <div className="footer__links">
             {links.map((link) => {
               return (
@@ -61,14 +61,14 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer__order">
-          <span className="h3">Make Order</span>
+          <p className="h3">Make Order</p>
           <div className="footer__order-info">
-            <span>+38 (095) 123-45-67</span>
-            <span>everyday from 11:30 to 23:00</span>
+            <p>+38 (095) 123-45-67</p>
+            <p>everyday from 11:30 to 23:00</p>
           </div>
         </div>
         <div className="footer__followUs">
-          <span className="h3">Follow Us</span>
+          <p className="h3">Follow Us</p>
           <div className="footer__socials">
             {socials.map((social) => {
               return (<a href={social.link} key={social.title}>
@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
         <div className="footer__info">
           <div className="footer__law">
-            <span className="h3">legal information</span>
+            <p className="h3">legal information</p>
             <p>Privacy Policy</p>
             <p>User's Agreement</p>
           </div>
@@ -91,7 +91,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__copyright">
-        <span className="h3">© КАТАНА 2021</span>
+        <p className="h3">© КАТАНА 2021</p>
         <img src={footerLogo} alt="logo2" className="mount"/>
       </div>
     </div>
