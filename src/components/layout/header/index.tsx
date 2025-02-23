@@ -3,6 +3,7 @@ import './styles.scss'
 import MenuCategoryList from "../MenuCategoryList";
 import React from "react";
 import {SidebarMenu} from "./sidebarMenu";
+import {Link} from "react-router-dom";
 
 interface ILang {
   title: string,
@@ -56,7 +57,7 @@ const Header = () => {
       <div className="header" style={{backgroundImage: `url(${headerBG})`}}>
         <div className="header-main">
           <div className="header-left">
-            <img src={logo} alt="logo" className="logo"/>
+            <Link to={"/"}><img src={logo} alt="logo" className="logo"/></Link>
             <p>Food Delivery in Kharkiv</p>
           </div>
           <div className="header-right">

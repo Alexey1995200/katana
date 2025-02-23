@@ -7,7 +7,7 @@ import {Button} from "../../components/button";
 import {ButtonBorder} from "../../components/buttonBorder";
 
 
-const getFoodCount = (width:number) => {
+const getFoodCount = (width: number) => {
   if (width < 768) {
     return 4;
   } else if (width < 860 && width > 768) {
@@ -23,6 +23,7 @@ const getFoodCount = (width:number) => {
 
 const Main = () => {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth < 768);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [newFoodCurrentPage, setNewFoodCurrentPage] = useState(0)
   const [chefsFoodCurrentPage, setChefsFoodCurrentPage] = useState(0)
   const [foodPerPage, setFoodPerPage] = useState(getFoodCount(window.innerWidth))
@@ -32,7 +33,7 @@ const Main = () => {
       const newWidth = window.innerWidth;
       setFoodPerPage(getFoodCount(newWidth));
       setIsMobileView(window.innerWidth < 768);
-      console.log("isMobileView updated:", window.innerWidth < 768);
+      setScreenWidth(window.innerWidth)
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -76,8 +77,12 @@ const Main = () => {
       setChefsFoodCurrentPage((page) => page - 1)
   }
   const navigate = useNavigate()
+  console.log(screenWidth)
   return (
     <div className={"main"}>
+      {screenWidth < 360 &&
+        <div style={{position: "absolute", height: "100%", width: "100%", zIndex: "99"}}>This resolution is not
+          supported</div>}
       <div className="main__adv">
         {advantages.map((advantage) => {
           return (
