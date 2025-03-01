@@ -140,7 +140,7 @@ const Main = () => {
             left: '20px',
             top: '412px',
             color: 'black',
-            display: (screenWidth < 768) || (currentAdvantage === 0) ? "none" : "unset"
+            display: (screenWidth < 769) || (currentAdvantage === 0) ? "none" : "unset"
           }}
           onClick={handlePrevAdvantage}
         />
