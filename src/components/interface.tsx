@@ -8,6 +8,7 @@ export interface IMenuCategory {
 export interface IAdvantage {
   ico: string;
   text: string;
+  isOutlined?: boolean;
 }
 
 export interface IMenuItem {

@@ -1,6 +1,6 @@
 import {advantages, categoryList, food,} from "../../components/const";
 import './styles.scss'
-import {useEffect, useMemo, useState} from "react";
+import {useEffect, useMemo, useRef, useState} from "react";
 import {ArrLeftBtn, ArrRightBtn, chefsRec, information, mapBG, more, newIco, samurai, spicyIco} from "../../assets";
 import {Link, useNavigate} from "react-router-dom";
 import {Button} from "../../components/button";
@@ -28,12 +28,23 @@ const Main = () => {
   const [chefsFoodCurrentPage, setChefsFoodCurrentPage] = useState(0)
   const [foodPerPage, setFoodPerPage] = useState(getFoodCount(window.innerWidth))
   const [isTextFull, setIsTextFull] = useState(false)
+  const [advantageWidth, setAdvantageWidth] = useState(192)
+  const [currentAdvantage, setCurrentAdvantage] = useState(0)
+  const advRef = useRef<HTMLDivElement>(null);
+  const advantageRef = useRef<HTMLDivElement | null>(null);
+  const advListGap = 16
+  const paddingLR = 80
+  const advWidth = (screenWidth - paddingLR * 2)
+
+
   useEffect(() => {
     const handleResize = () => {
-      const newWidth = window.innerWidth;
-      setFoodPerPage(getFoodCount(newWidth));
-      setIsMobileView(window.innerWidth < 768);
       setScreenWidth(window.innerWidth)
+      setFoodPerPage(getFoodCount(window.innerWidth));
+      setIsMobileView(window.innerWidth < 768);
+      if (!!advRef.current) {
+        setAdvantageWidth(advRef.current.offsetWidth);
+      }
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -49,7 +60,7 @@ const Main = () => {
     chefsFoodCurrentPage * foodPerPage,
     (chefsFoodCurrentPage + 1) * foodPerPage
   );
-  const newFoodMaxPages = Math.ceil(newFood.length / foodPerPage);
+  const newFoodMaxPages = Math.floor(newFood.length / foodPerPage);
   const handleNextNewFoodPage = () => {
     if (newFoodCurrentPage !== newFoodMaxPages - 1) {
       setNewFoodCurrentPage((page) => page + 1);
@@ -77,16 +88,38 @@ const Main = () => {
       setChefsFoodCurrentPage((page) => page - 1)
   }
   const navigate = useNavigate()
-  console.log(screenWidth)
+
+  const numberOfShownAdvantages: number = Math.floor(advWidth / (advantageWidth + advListGap));
+
+  const shownAdvantages = advantages.slice(
+    currentAdvantage,
+    numberOfShownAdvantages + currentAdvantage
+  );
+  const handleNextAdvantage = () => {
+    if (currentAdvantage !== advantages.length - numberOfShownAdvantages) {
+      setCurrentAdvantage((i) => i + 1);
+    } else {
+      return null
+    }
+  }
+  const handlePrevAdvantage = () => {
+    if (currentAdvantage === 0) return null
+    else
+      setCurrentAdvantage((i) => i - 1)
+  }
+
+
   return (
     <div className={"main"}>
       {screenWidth < 360 &&
         <div style={{position: "absolute", height: "100%", width: "100%", zIndex: "99"}}>This resolution is not
           supported</div>}
-      <div className="main__adv">
-        {advantages.map((advantage) => {
+      <div className="main__adv" ref={advRef}>
+        {shownAdvantages.map((advantage, i) => {
           return (
-            <div className="advantage__out">
+            <div className={`advantage__out ${!advantage.isOutlined && 'transparent'}`}
+                 ref={i === 0 ? advantageRef : null}
+            >
               <div className="advantage__in">
                 <img className="advantage__img" src={advantage.ico} alt=""/>
                 <p className="advantage__text">{advantage.text}</p>
@@ -95,6 +128,27 @@ const Main = () => {
           )
         })
         }
+        <ArrLeftBtn
+          style={{
+            position: 'absolute',
+            left: '20px',
+            top: '412px',
+            color: 'black',
+            display: (screenWidth < 400) || (currentAdvantage === 0) ? "none" : "unset"
+          }}
+          onClick={handlePrevAdvantage}
+        />
+        <ArrRightBtn
+          style={{
+            position: 'absolute',
+            left: `${screenWidth - 60}px`,
+            top: '412px',
+            color: 'black',
+            display: (screenWidth < 400) || (currentAdvantage + numberOfShownAdvantages === advantages.length) ? "none" : "unset"
+          }}
+          strokeColor={'white'}
+          onClick={handleNextAdvantage}
+        />
       </div>
       <div className="main__most-order">
         <p className="main__header_left">Most Ordered</p>

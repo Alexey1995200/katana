@@ -84,13 +84,13 @@ export const categoryList: IMenuCategory[] = [
 ]
 
 export const advantages: IAdvantage[] = [
-  {ico: turtle, text: "Всегда бесплатная доставка"},
-  {ico: bag, text: "Доступ к выгодным пиццам!"},
+  {ico: turtle, text: "Всегда бесплатная доставка", isOutlined: true},
+  {ico: bag, text: "Доступ к выгодным пиццам!", isOutlined: true},
   {ico: fish, text: "Вкуснейшие рыбные новинки"},
-  {ico: badminton, text: "Мы обновили комбо!"},
+  {ico: badminton, text: "Мы обновили комбо!", isOutlined: true},
   {ico: neko, text: "Получите бонусы за первый заказ"},
-  {ico: bull, text: "Дарим магнитик при заказе суши"},
-  {ico: flowers, text: "Горячие новинки!"}
+  {ico: bull, text: "Дарим магнитик при заказе суши", isOutlined: true},
+  {ico: flowers, text: "Горячие новинки!", isOutlined: true}
 ];
 
 export const food: IMenuItem[] = [

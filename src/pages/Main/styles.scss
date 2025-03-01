@@ -55,10 +55,13 @@
   display: flex;
   height: 224px;
   width: 192px;
-  min-height: 224px;
+  //min-height: 224px;
   min-width: 192px;
   font-size: 20px;
   font-weight: 400;
+  &.transparent{
+    background-color: transparent;
+  }
   @media screen and (max-width: 768px) {
     height: 118px;
     width: 96px;
@@ -78,7 +81,7 @@
 }
 
 .advantage__img {
-  max-height: 60%;
+  max-height: 128px;
   align-self: flex-end;
   padding: 20px;
   @media screen and (max-width: 768px) {
