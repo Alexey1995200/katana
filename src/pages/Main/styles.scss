@@ -447,9 +447,9 @@
 
 .delivery__pic {
   height: 250px;
-  max-width: 100%;
   object-fit: cover;
-  position: absolute;
+  position: relative;
+  left: 50px;
   transform: translate(-64px, 0);
   @media screen and (max-width: 1240px) {
     display: none;

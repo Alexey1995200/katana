@@ -360,7 +360,7 @@ const Main = () => {
         <ButtonBorder
           title={"more"}
           color={"black"}
-          width={"100%"}
+          width={screenWidth < 769 ? "100%" : "unset"}
         />
       </div>
     </div>

@@ -67,7 +67,7 @@ import more from './svg/arrMore.svg'
 import chefsRec from './svg/5s.svg'
 import information from './svg/info.svg'
 import mapBG from './svg/map.svg'
-import samurai from './png/img_1.png'
+import samurai from './png/samurai.png'
 
 export {
   logo,
