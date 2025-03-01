@@ -42,8 +42,8 @@ const Main = () => {
       setScreenWidth(window.innerWidth)
       setFoodPerPage(getFoodCount(window.innerWidth));
       setIsMobileView(window.innerWidth < 768);
-      if (!!advRef.current) {
-        setAdvantageWidth(advRef.current.offsetWidth);
+      if (!!advantageRef.current) {
+        setAdvantageWidth(advantageRef.current.offsetWidth);
       }
     };
     window.addEventListener("resize", handleResize);
@@ -108,7 +108,7 @@ const Main = () => {
       setCurrentAdvantage((i) => i - 1)
   }
 
-
+  console.log(numberOfShownAdvantages, advWidth, (advantageWidth + advListGap))
   return (
     <div className={"main"}>
       {screenWidth < 360 &&
