@@ -2,6 +2,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  font-family: Gerbera, sans-serif;
 
   .header-main {
     display: flex;
@@ -22,12 +23,16 @@
       }
 
       p {
-        font-family: Oswald, sans-serif;
+        font-family: RFRufo, sans-serif;
         font-size: 20px;
         line-height: 140%;
         text-wrap: wrap;
-        width: 150px;
+        width: 112px;
         padding-top: 24px;
+        font-weight: 900;
+        letter-spacing: 4%;
+        text-align: left;
+        text-transform: uppercase;
         @media screen and (max-width: 799px) {
           display: none
         }
