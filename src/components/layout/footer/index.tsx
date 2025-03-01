@@ -63,7 +63,7 @@ const Footer = () => {
         <div className="footer__order">
           <p className="h3">Make Order</p>
           <div className="footer__order-info">
-            <p>+38 (095) 123-45-67</p>
+            <a href="tel:+380951234567">+38 (095) 123-45-67</a>
             <p>everyday from 11:30 to 23:00</p>
           </div>
         </div>
@@ -71,7 +71,7 @@ const Footer = () => {
           <p className="h3">Follow Us</p>
           <div className="footer__socials">
             {socials.map((social) => {
-              return (<a href={social.link} key={social.title}>
+              return (<a href={social.link} key={social.title} target="_blank" rel="noopener noreferrer">
                 <img src={social.img} alt={`${social.title} logo`}/>
               </a>)
             })}
@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
         <div className="footer__info">
           <div className="footer__law">
-            <p className="h3">legal information</p>
+            <div className="h3">legal information</div>
             <p>Privacy Policy</p>
             <p>User's Agreement</p>
           </div>

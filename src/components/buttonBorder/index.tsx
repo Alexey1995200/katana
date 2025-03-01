@@ -1,6 +1,6 @@
 import './styles.scss'
-export const ButtonBorder = ({title, onClick, color}:any) => {
+export const ButtonBorder = ({title, onClick, color, width}:any) => {
   return(
-    <button className="buttonBorder" onClick={onClick} style={{color:`${color}`}}>{title}</button>
+    <button className="buttonBorder" onClick={onClick} style={{color:`${color}`, width:width}}>{title}</button>
   )
 }

@@ -33,10 +33,10 @@ const Main = () => {
   const advRef = useRef<HTMLDivElement>(null);
   const advantageRef = useRef<HTMLDivElement | null>(null);
   const advListGap = 16
-  const paddingLR = 80
+  const paddingLR = screenWidth > 768 ? 80 : 12
   const advWidth = (screenWidth - paddingLR * 2)
 
-
+  console.log(paddingLR)
   useEffect(() => {
     const handleResize = () => {
       setScreenWidth(window.innerWidth)
@@ -91,10 +91,12 @@ const Main = () => {
 
   const numberOfShownAdvantages: number = Math.floor(advWidth / (advantageWidth + advListGap));
 
-  const shownAdvantages = advantages.slice(
+  const shownAdvantages = screenWidth < 769 ? advantages : advantages.slice(
     currentAdvantage,
     numberOfShownAdvantages + currentAdvantage
-  );
+  )
+
+
   const handleNextAdvantage = () => {
     if (currentAdvantage !== advantages.length - numberOfShownAdvantages) {
       setCurrentAdvantage((i) => i + 1);
@@ -108,19 +110,23 @@ const Main = () => {
       setCurrentAdvantage((i) => i - 1)
   }
 
-  console.log(numberOfShownAdvantages, advWidth, (advantageWidth + advListGap))
   return (
     <div className={"main"}>
       {screenWidth < 360 &&
-        <div style={{position: "absolute", height: "100%", width: "100%", zIndex: "99"}}>This resolution is not
+        <div style={{
+          position: "absolute",
+          height: "100%",
+          width: "100%",
+          zIndex: "99"
+        }}>This resolution is not
           supported</div>}
-      <div className="main__adv" ref={advRef}>
+      <div className={`main__adv ${screenWidth < 769 && 'overflow'}`} ref={advRef}>
         {shownAdvantages.map((advantage, i) => {
           return (
             <div className={`advantage__out ${!advantage.isOutlined && 'transparent'}`}
                  ref={i === 0 ? advantageRef : null}
             >
-              <div className="advantage__in">
+              <div className={`advantage__in ${!advantage.isOutlined && 'transparent'}`}>
                 <img className="advantage__img" src={advantage.ico} alt=""/>
                 <p className="advantage__text">{advantage.text}</p>
               </div>
@@ -134,7 +140,7 @@ const Main = () => {
             left: '20px',
             top: '412px',
             color: 'black',
-            display: (screenWidth < 400) || (currentAdvantage === 0) ? "none" : "unset"
+            display: (screenWidth < 768) || (currentAdvantage === 0) ? "none" : "unset"
           }}
           onClick={handlePrevAdvantage}
         />
@@ -144,7 +150,7 @@ const Main = () => {
             left: `${screenWidth - 60}px`,
             top: '412px',
             color: 'black',
-            display: (screenWidth < 400) || (currentAdvantage + numberOfShownAdvantages === advantages.length) ? "none" : "unset"
+            display: (screenWidth < 769) || (currentAdvantage + numberOfShownAdvantages === advantages.length) ? "none" : "unset"
           }}
           strokeColor={'white'}
           onClick={handleNextAdvantage}
@@ -343,7 +349,7 @@ const Main = () => {
           reprehenderit sed tenetur veniam veritatis! Ad autem commodi deserunt harum, nisi placeat porro tempora.
           Distinctio facere quod voluptatibus. Ad aspernatur distinctio odit velit, vero voluptas.</p>
         {!isTextFull && <div className="text__gradient"/>}
-        <div className="text__more" onClick={() => setIsTextFull(!isTextFull)}>Подробнее</div>
+        <button className="text__more" onClick={() => setIsTextFull(!isTextFull)}>Подробнее</button>
       </div>
       <div className="main__delivery" style={{backgroundImage: `url(${mapBG})`}}>
         <img className="delivery__pic" alt="" src={samurai}/>
@@ -354,6 +360,7 @@ const Main = () => {
         <ButtonBorder
           title={"more"}
           color={"black"}
+          width={"100%"}
         />
       </div>
     </div>
