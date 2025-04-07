@@ -75,8 +75,8 @@ const MenuCategoryList = () => {
       >
         <Link key={'cart'} to={`cart`} className='category-link-cart'>
           <img src={cart} alt=""/>
-          <div className="cart-detais">
-            <p>Cart</p>
+          <div className="cart-details">
+            <p className='cart-details__title'>Cart</p>
             <p>{`${money}₴`}</p>
           </div>
         </Link>

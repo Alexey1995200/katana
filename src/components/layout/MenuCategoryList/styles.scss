@@ -6,8 +6,12 @@
   padding: 24px 80px 32px 80px;
   overflow-x: auto;
   font-size: 14px;
-  font-family: RFRufo, sans-serif;
+  font-family: RF Rufo, sans-serif;
   justify-content: center;
+  //width: calc(100% + 80px);
+  @media screen and (max-width: 768px) {
+    padding: 32px 0 32px 12px;
+  }
 
   .menuCategoryList {
     display: flex;
@@ -39,7 +43,7 @@
         display: flex;
         flex-direction: column;
         gap: 8px;
-        font-family: RFRufo, sans-serif;
+        font-family: RF Rufo, sans-serif;
         font-size: 14px;
         font-weight: 900;
         line-height: 18px;
@@ -58,9 +62,9 @@
     border: rgba(255, 255, 255, 0.3) 1px solid;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 24px;
-    //@media screen and (max-width:769px){
-    //  display: none;
-    //}
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
 
 
     .category-link-cart {
@@ -70,13 +74,17 @@
       width: auto;
       gap: 12px;
 
-      .cart-detais {
+      .cart-details {
         font-family: Gerbera, sans-serif;
         display: flex;
         flex-direction: column;
         justify-content: center;
         //gap: 4px;
         line-height: 140%;
+
+        .cart-details__title {
+          font-weight: 400;
+        }
       }
     }
   }

@@ -3,6 +3,9 @@
   border-radius: 40px;
   border: 1px solid rgb(230, 51, 42);
   color: white;
+  text-align: center;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+  width: max-content;
 
   &:hover {
     background: rgb(207, 28, 19);
@@ -13,7 +16,29 @@
   }
 
   &:disabled {
-    color:rgb(222, 188, 186);
+    color: rgb(222, 188, 186);
     border: 1px solid rgb(222, 188, 186);
+  }
+
+  &.white {
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+
+    &:hover {
+      background: white;
+      color: black;
+    }
+
+    &:active {
+      background: #ebebeb;
+      color: black;
+    }
+
+    &:disabled {
+      color: gray;
+      border: 1px solid darkgray;
+      background: #bfbfbf;
+    }
   }
 }

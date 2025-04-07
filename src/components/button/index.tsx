@@ -1,6 +1,6 @@
 import './styles.scss'
-export const Button = ({title, onClick}:any) => {
+export const Button = ({title, onClick, position}:any) => {
   return(
-    <button className="button" onClick={onClick}>{title}</button>
+    <button className="button" onClick={onClick} style={{alignSelf:position}}>{title}</button>
   )
 }

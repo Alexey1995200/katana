@@ -62,10 +62,16 @@ const Header = () => {
           </div>
           <div className="header-right">
             <div className="header__buttons">
-              <img src={cart} alt="cart"/>
-              <img src={menu} alt="menu" onClick={() => {
-                setIsMenuOpened(true)
-              }}/>
+              <button>
+                <img src={cart} alt="cart"/>
+              </button>
+              <button
+                onClick={() => {
+                  setIsMenuOpened(true)
+                }}
+              >
+                <img src={menu} alt="menu"/>
+              </button>
             </div>
             <div className="calls">
               <div className="calls-top">

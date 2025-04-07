@@ -1,10 +1,11 @@
+import {format} from "date-fns";
 import {
   badminton,
-  bag, bull,
+  bag, banner1, banner2, banner3, banner4, banner5, banner6, bull,
   childIco, childPhoto,
   dessertIco, dessetPhoto, fish, flowers,
   hotIco, hotPhoto, neko,
-  pizzaIco, pizzaPhoto,
+  pizzaIco, pizzaPhoto, primaryBannerPng,
   rollsIco, rollsPhoto,
   saladIco, saladPhoto,
   setIco,
@@ -15,9 +16,14 @@ import {
   veganIco, veganPhoto,
   wokIco, wokPhoto
 } from "../assets";
-import {IAdvantage, IMenuCategory, IMenuItem} from "./interface";
+import {IAdvantage, IBlogBanner, IBlogItem, IMenuCategory, IMenuItem} from "./interface";
 
 // export const screenWidth: number = window.innerWidth
+
+export const timestampToDMY = (timestamp: number) => format(new Date(timestamp), 'dd.MM.yyyy')
+export const timestampToDMYNumStrNum = (timestamp: number) => format(new Date(timestamp), 'dd.MM.yyyy')
+
+
 
 export const categoryList: IMenuCategory[] = [
   {
@@ -111,6 +117,7 @@ export const food: IMenuItem[] = [
     title: "П'ядіна з куркою",
     img: "https://cdn-media.choiceqr.com/prod-eat-fermento/menu/mXAfUml-wCLIuRe-sSFgHcT.webp",
     price: 195,
+    oldPrice: 200,
     isChefsRec: true,
     description: "Неаполітанське тісто, філе Ципи, руккола, айсберг, помідори Чері, крем-сир, соус Цезар"
   },
@@ -127,6 +134,7 @@ export const food: IMenuItem[] = [
     title: "Паста Болоньєзе",
     img: "https://cdn-media.choiceqr.com/prod-eat-fermento/menu/AiugwQA-lkUFUHb-DRrpsQh.jpeg.webp",
     price: 255,
+    oldPrice: 275,
     isNew: true,
     isChefsRec: true,
     weight: 350,
@@ -152,6 +160,7 @@ export const food: IMenuItem[] = [
     title: "Стейк з яловичого філе",
     img: "https://cdn-media.choiceqr.com/prod-eat-fermento/menu/smKvcgP-DnJfEAD-KALmYDW.webp",
     price: 300,
+    oldPrice: 360,
     isChefsRec: true,
     weight: 100,
     description: "Стейк з телятини, прожарку якого обирає гість. Подається з помідорами чері, руколою та бальзамічним кремом."
@@ -228,3 +237,95 @@ export const food: IMenuItem[] = [
   },
 ];
 
+export const bannersList: IBlogItem[] = [
+  {
+    title: 'Premium Set with a Discount',
+    description: 'Get one of two sticker packs as a gift when ordering the New Year’s special "Turkey in Mandarins". Try it and enjoy! Limited number of sticker packs available.',
+    date: 1700000000,
+    views: 375,
+    img: primaryBannerPng
+  }, {
+    title: 'Discounts, Tasting, and a Win-Win Lottery',
+    description: 'Get one of two sticker packs as a gift when ordering the New Year’s special "Turkey in Mandarins". Try it and enjoy! Limited number of sticker packs available.',
+    date: 1700100000,
+    views: 1563,
+    type: "promo",
+    img: banner1
+  }, {
+    title: 'Winter Set for 199 ₴',
+    description: 'Curious about how pizza is made? We invite you to watch the process live!',
+    date: 1700200000,
+    views: 1235,
+    img: banner2
+  }, {
+    title: 'Winter Specials',
+    description: 'Your favorite dishes are now closer, and the ordering process is even more enjoyable with our stylish new app!',
+    date: 1700300000,
+    views: 1239,
+    img: banner3
+  }, {
+    title: 'A Gift from Katana',
+    description: 'Get one of two sticker packs as a gift when ordering the New Year’s special "Turkey in Mandarins". Try it and enjoy! Limited number of sticker packs available.',
+    date: 1700400000,
+    views: 1981,
+    type: "present",
+    img: banner4
+  }, {
+    title: 'Up to 30% Discounts on Corporate Orders',
+    description: 'Curious about how pizza is made? We invite you to watch the process live!',
+    date: 1700500000,
+    views: 982,
+    type: "offer",
+    img: banner5
+  }, {
+    title: 'Celebrating a Birthday?',
+    description: 'Your favorite dishes are now closer, and the ordering process is even more enjoyable with our stylish new app!',
+    date: 1700600000,
+    views: 3581,
+    type: "promo",
+    img: banner6
+  }, {
+    title: 'Discounts, Tasting, and a Win-Win Lottery',
+    description: 'Get one of two sticker packs as a gift when ordering the New Year’s special "Turkey in Mandarins". Try it and enjoy! Limited number of sticker packs available.',
+    date: 1700100000,
+    views: 1563,
+    type: "promo",
+    img: banner1
+  }, {
+    title: 'Winter Set for 199 ₴',
+    description: 'Curious about how pizza is made? We invite you to watch the process live!',
+    date: 1700200000,
+    views: 1235,
+    img: banner2
+  }, {
+    title: 'Winter Specials',
+    description: 'Your favorite dishes are now closer, and the ordering process is even more enjoyable with our stylish new app!',
+    date: 1700300000,
+    views: 1239,
+    img: banner3
+  }, {
+    title: 'A Gift from Katana',
+    description: 'Get one of two sticker packs as a gift when ordering the New Year’s special "Turkey in Mandarins". Try it and enjoy! Limited number of sticker packs available.',
+    date: 1700400000,
+    views: 1981,
+    type: "present",
+    img: banner4
+  }, {
+    title: 'Up to 30% Discounts on Corporate Orders',
+    description: 'Curious about how pizza is made? We invite you to watch the process live!',
+    date: 1700500000,
+    views: 982,
+    type: "offer",
+    img: banner5
+  }, {
+    title: 'Celebrating a Birthday?',
+    description: 'Your favorite dishes are now closer, and the ordering process is even more enjoyable with our stylish new app!',
+    date: 1700600000,
+    views: 3581,
+    type: "promo",
+    img: banner6
+  }
+];
+
+export const primaryBanner = bannersList[0]
+export const bannersArr = bannersList.slice(1)

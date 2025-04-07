@@ -1,10 +1,11 @@
 import {advantages, categoryList, food,} from "../../components/const";
 import './styles.scss'
 import {useEffect, useMemo, useRef, useState} from "react";
-import {ArrLeftBtn, ArrRightBtn, chefsRec, information, mapBG, more, newIco, samurai, spicyIco} from "../../assets";
+import {ArrLeftBtn, ArrRightBtn, mapBG, more, samurai} from "../../assets";
 import {Link, useNavigate} from "react-router-dom";
-import {Button} from "../../components/button";
 import {ButtonBorder} from "../../components/buttonBorder";
+import {DishBanner_adaptive} from "../../components/layout/Main/dishBanner_adaptive";
+import {DishBanner_fixed} from "../../components/layout/Main/dishBanner_fixed";
 
 
 const getFoodCount = (width: number) => {
@@ -36,7 +37,6 @@ const Main = () => {
   const paddingLR = screenWidth > 768 ? 80 : 12
   const advWidth = (screenWidth - paddingLR * 2)
 
-  console.log(paddingLR)
   useEffect(() => {
     const handleResize = () => {
       setScreenWidth(window.innerWidth)
@@ -134,27 +134,34 @@ const Main = () => {
           )
         })
         }
-        <ArrLeftBtn
-          style={{
-            position: 'absolute',
-            left: '20px',
-            top: '412px',
-            color: 'black',
-            display: (screenWidth < 769) || (currentAdvantage === 0) ? "none" : "unset"
-          }}
+        <button
           onClick={handlePrevAdvantage}
-        />
-        <ArrRightBtn
-          style={{
-            position: 'absolute',
-            left: `${screenWidth - 60}px`,
-            top: '412px',
-            color: 'black',
-            display: (screenWidth < 769) || (currentAdvantage + numberOfShownAdvantages === advantages.length) ? "none" : "unset"
-          }}
-          strokeColor={'white'}
+        >
+          <ArrLeftBtn
+            style={{
+              position: 'absolute',
+              left: '20px',
+              top: '412px',
+              color: 'black',
+              display: (screenWidth < 769) || (currentAdvantage === 0) ? "none" : "unset"
+            }}
+          />
+        </button>
+
+        <button
           onClick={handleNextAdvantage}
-        />
+        >
+          <ArrRightBtn
+            style={{
+              position: 'absolute',
+              left: `${screenWidth - 60}px`,
+              top: '412px',
+              color: 'black',
+              display: (screenWidth < 769) || (currentAdvantage + numberOfShownAdvantages === advantages.length) ? "none" : "unset"
+            }}
+            strokeColor={'white'}
+          />
+        </button>
       </div>
       <div className="main__most-order">
         <p className="main__header_left">Most Ordered</p>
@@ -202,15 +209,21 @@ const Main = () => {
           <div className="main__header_right">
             {!isMobileView &&
               <div className="filtered__pagination">
-                <ArrLeftBtn
-                  color={newFoodCurrentPage === 0 ? "#ccdadd" : "black"}
+                <button
                   onClick={() => handlePrevNewFoodPage()}
-                />
+                >
+                  <ArrLeftBtn
+                    color={newFoodCurrentPage === 0 ? "#ccdadd" : "black"}
+                  />
+                </button>
                 <p className="pagination">{newFoodCurrentPage + 1} / {newFoodMaxPages}</p>
-                <ArrRightBtn
-                  color={newFoodCurrentPage === newFoodMaxPages ? "#ccdadd" : "black"}
+                <button
                   onClick={() => handleNextNewFoodPage()}
-                />
+                >
+                  <ArrRightBtn
+                    color={newFoodCurrentPage === newFoodMaxPages ? "#ccdadd" : "black"}
+                  />
+                </button>
               </div>
             }
             <Link to={"/"} className="pagination__link">Watch all <img className="pagination__more" src={more}
@@ -220,41 +233,10 @@ const Main = () => {
         <div className="filtered__body">
           {newFoodToShow.map((food) => {
             return (
-              <div key={food.title} className="filteredFood__wrapper">
-                <div className="filteredFood__body">
-                  <div className="filteredFood__img" style={{
-                    backgroundImage: `url("${food.img}")`,
-                  }}>
-                    {food.isNew && <img src={newIco} alt="" className="filteredFood__tag"/>}
-                    {food.isSpicy && <img src={spicyIco} alt="" className="filteredFood__tag"/>}
-                  </div>
-                  {!isMobileView ?
-                    <div className="food__details">
-                      <p className="food__title">{food.title}</p>
-                      <p className="food__desc">
-                        {food.weight && <span className="food__weight">{food.weight}g.</span>}
-                        {food.weight && ' - '}
-                        {food.description}</p>
-                    </div> :
-                    <div className="food__details">
-                      <p className="food__title">{food.title}</p>
-                      <img src={information}
-                           alt=""
-                           style={{height: "20px"}}
-                           onClick={() => null}/>
-                    </div>}
-                </div>
-                <div className="food__buy">
-                  <div className="food__price">
-                    <p className="food__price_current">{food.price} ₴</p>
-                    {food.oldPrice && <p className="food__price_old">{food.oldPrice} ₴</p>}
-                  </div>
-                  <Button
-                    title={"add to cart"}
-                    onClick={() => navigate('/addToCart')} //
-                  />
-                </div>
-              </div>
+              <DishBanner_fixed
+                food={food}
+                isMobileView={isMobileView}
+              />
             )
           })}
         </div>
@@ -265,15 +247,21 @@ const Main = () => {
           <div className="main__header_right">
             {!isMobileView &&
               <div className="filtered__pagination">
-                <ArrLeftBtn
-                  color={chefsFoodCurrentPage === 0 ? "#ccdadd" : "black"}
+                <button
                   onClick={() => handlePrevChefsFoodPage()}
-                />
+                >
+                  <ArrLeftBtn
+                    color={chefsFoodCurrentPage === 0 ? "#ccdadd" : "black"}
+                  />
+                </button>
                 <p className="pagination">{chefsFoodCurrentPage + 1} / {chefsFoodMaxPages}</p>
-                <ArrRightBtn
-                  color={chefsFoodCurrentPage === chefsFoodMaxPages ? "#ccdadd" : "black"}
+                <button
                   onClick={() => handleNextChefsFoodPage()}
-                />
+                >
+                  <ArrRightBtn
+                    color={chefsFoodCurrentPage === chefsFoodMaxPages ? "#ccdadd" : "black"}
+                  />
+                </button>
               </div>}
             <div>
               <Link
@@ -288,41 +276,10 @@ const Main = () => {
         <div className="filtered__body">
           {chefsFoodToShow.map((food) => {
             return (
-              <div key={food.title} className="filteredFood__wrapper alt">
-                <div className="filteredFood__body">
-                  <div className="filteredFood__img alt" style={{
-                    backgroundImage: `url("${food.img}")`,
-                  }}>
-                    {food.isChefsRec && <img src={chefsRec} alt="" className="filteredFood__tag"/>}
-                  </div>
-                  {!isMobileView ?
-                    <div className="food__details">
-                      <p className="food__title">{food.title}</p>
-                      <p className="food__desc">
-                        {food.weight && <span className="food__weight">{food.weight}g.</span>}
-                        {food.weight && ' - '}
-                        {food.description}</p>
-                    </div> :
-                    <div className="food__details">
-                      <p className="food__title">{food.title}</p>
-                      <img src={information}
-                           alt=""
-                           style={{height: "20px"}}
-                           onClick={() => null}/>
-                    </div>}
-
-                </div>
-                <div className="food__buy">
-                  <div className="food__price">
-                    <p className="food__price_current">{food.price} ₴</p>
-                    {food.oldPrice && <p className="food__price_old">{food.oldPrice} ₴</p>}
-                  </div>
-                  <Button
-                    title={"add to cart"}
-                    onClick={() => navigate('/addToCart')}
-                  />
-                </div>
-              </div>
+              <DishBanner_adaptive
+                food={food}
+                isMobileView={isMobileView}
+              />
             )
           })}
         </div>

@@ -1,7 +1,7 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');*/
 
 @font-face {
-  font-family: 'RFRufo';
+  font-family: 'RF Rufo';
   src: url('assets/fonts/RFRufo-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -14,6 +14,84 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Gerbera-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gerbera Regular'), url('assets/fonts/Gerbera-Regular.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Gerbera-Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gerbera Italic'), url('assets/fonts/Gerbera-Regular-Italic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Gerbera-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gerbera Light'), url('assets/fonts/Gerbera-Light.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Gerbera Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gerbera Light Italic'), url('assets/fonts/Gerbera-Lightitalic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Gerbera Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gerbera Medium'), url('assets/fonts/Gerbera-Medium.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Gerbera Medium Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gerbera Medium Italic'), url('assets/fonts/Gerbera-Medium-italic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Gerbera Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gerbera Bold'), url('assets/fonts/Gerbera-Bold.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Gerbera Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gerbera Bold Italic'), url('assets/fonts/Gerbera-Bold-Italic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Gerbera Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gerbera Black'), url('assets/fonts/Gerbera-Black.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Gerbera Black Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gerbera Black Italic'), url('assets/fonts/Gerbera-Black-italic.woff') format('woff');
+}
 
 body {
   margin: 0;

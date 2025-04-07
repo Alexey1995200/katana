@@ -6,6 +6,9 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Layout from "./components/layout";
 import {ErrorPage} from "./components/err";
 import Main from "./pages/Main";
+import Blog from "./pages/Blog";
+
+
 
 const router = createBrowserRouter([
   {
@@ -14,7 +17,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Main /> },
       // { path: "about", element: <AboutUs /> },
-      // { path: "blog", element: <Blog /> },
+      { path: "blog", element: <Blog /> },
       // {
       //   path: "menu",
       //   element: <MenuLayout />, // Новий Layout для меню

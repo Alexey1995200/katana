@@ -7,9 +7,11 @@ import cart from './svg/shopCart.svg';
 import menu from './svg/menu.svg';
 import phone from './svg/phone.svg';
 import arrowDown from './svg/arrowDown.svg';
+import arrowDownMore from './svg/arrDnMore.svg';
 import arrLeft from './svg/arrLeft.svg';
 import arrRight from './svg/arrRight.svg';
 import closeBtn from './svg/close.svg';
+import placeholder from './jpeg/placeholder.jpg';
 
 import {ReactComponent as ArrLeftBtn} from './svg/arrLeft.svg'
 import {ReactComponent as ArrRightBtn} from './svg/arrRight.svg'
@@ -59,67 +61,90 @@ import neko from './svg/neko.svg'
 import flowers from './svg/flowers.svg'
 import turtle from './svg/turtle.svg'
 
+//banners
+import primaryBannerPng from './png/banners/img.png'
+import banner1 from './png/banners/img_1.png'
+import banner2 from './png/banners/img_2.png'
+import banner3 from './png/banners/img_3.png'
+import banner4 from './png/banners/img_4.png'
+import banner5 from './png/banners/img_5.png'
+import banner6 from './png/banners/img_6.png'
 
-//etc
+//other ico
 import newIco from './svg/new.svg'
 import spicyIco from './svg/spicy.svg'
 import more from './svg/arrMore.svg'
 import chefsRec from './svg/5s.svg'
 import information from './svg/info.svg'
+import {ReactComponent as Calendar} from './svg/calendar.svg'
+import {ReactComponent as Views} from './svg/eye.svg'
+
+//etc
 import mapBG from './svg/map.svg'
 import samurai from './png/samurai.png'
 
 export {
-  logo,
-  bg,
-  facebook,
-  instagram,
-  telegram,
-  youtube,
-  mastercard,
-  visa,
-  cart,
-  footerLogo,
-  headerBG,
-  setIco,
-  hotIco,
-  wokIco,
-  soupIco,
-  sushiIco,
-  childIco,
-  pizzaIco,
-  rollsIco,
-  saladIco,
-  veganIco,
-  snackIco,
-  dessertIco,
-  menu,
-  phone,
-  arrowDown,
-  closeBtn,
-  hotPhoto,
-  childPhoto,
-  wokPhoto,
-  dessetPhoto,
-  pizzaPhoto,
-  rollsPhoto,
-  saladPhoto,
-  setPhoto,
-  snackPhoto,
-  veganPhoto,
-  soupPhoto,
-  sushiPhoto,
-  bag,
-  fish,
-  bull,
-  neko,
-  flowers,
-  badminton,
-  turtle,
-  arrRight,
-  arrLeft,
   ArrLeftBtn,
   ArrRightBtn,
+  arrLeft,
+  arrRight,
+  arrowDown,
+  arrowDownMore,
+  badminton,
+  bag,
+  banner1, banner2, banner3, banner4, banner5, banner6,
+  bg,
+  bull,
+  Calendar,
+  cart,
+  chefsRec,
+  childIco,
+  childPhoto,
+  closeBtn,
+  dessertIco,
+  dessetPhoto,
+  facebook,
+  fish,
+  flowers,
+  footerLogo,
+  headerBG,
+  hotIco,
+  hotPhoto,
+  information,
+  instagram,
+  logo,
+  mapBG,
+  mastercard,
+  menu,
+  more,
+  neko,
+  newIco,
+  phone,
+  pizzaIco,
+  pizzaPhoto,
+  placeholder,
+  primaryBannerPng,
+  rollsIco,
+  rollsPhoto,
+  saladIco,
+  saladPhoto,
+  samurai,
+  setIco,
+  setPhoto,
+  snackIco,
+  snackPhoto,
+  soupIco,
+  soupPhoto,
   spicyIco,
-  newIco, more, chefsRec, information, mapBG,samurai
+  sushiIco,
+  sushiPhoto,
+  telegram,
+  turtle,
+  veganIco,
+  veganPhoto,
+  visa,
+  Views,
+  wokIco,
+  wokPhoto,
+  youtube
 };

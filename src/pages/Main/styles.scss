@@ -12,7 +12,7 @@
 
 .main__header_left {
   color: #212529;
-  font-family: RFRufo, sans-serif;
+  font-family: RF Rufo, sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 140%;
@@ -46,6 +46,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
     justify-content: unset;
+    width: calc(100% + 12px);
   }
   @media screen and (max-width: 768px) {
     gap: 8px;
@@ -100,6 +101,7 @@
 
 .advantage__text {
   padding: 0 16px 20px 16px;
+  margin-top: auto;
   @media screen and (max-width: 768px) {
     padding: 0 8px 10px 8px;
   }
@@ -204,7 +206,7 @@
     padding: 20px 16px;
   }
 
-  font-family: RFRufo, sans-serif;
+  font-family: RF Rufo, sans-serif;
   font-size: 24px;
   font-weight: 900;
   line-height: 29px;

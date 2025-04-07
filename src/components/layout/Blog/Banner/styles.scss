@@ -1,0 +1,70 @@
+.banner {
+  display: flex;
+  //display: inline-block;
+  flex-direction: column;
+  gap: 20px;
+  color: black;
+  //height: ;
+  //max-width: 448px;
+  text-wrap: wrap;
+  margin-bottom: 48px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+  .image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    //height: 240px;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+
+    .type {
+      display: inline-block;
+      background-color: #ff3c14;
+      color: white;
+      border-radius: 4px;
+      font-size: 20px;
+      height: 32px;
+      text-transform: capitalize;
+      padding: 0 12px;
+      text-align: center;
+      margin: 16px;
+      line-height: 150%;
+    }
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    .date, .views {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px
+    }
+  }
+
+  .text {
+    color: #212529;
+    font-weight: 400;
+    letter-spacing: 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+    .title {
+      font-size: 16px;
+      line-height: 140%;
+    }
+
+    .description {
+      font-family: Gerbera-Light;
+      font-size: 15px;
+      line-height: 170%;
+    }
+  }
+}

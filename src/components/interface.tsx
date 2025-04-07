@@ -22,3 +22,21 @@ export interface IMenuItem {
   isNew?: boolean;
   isSpicy?: boolean;
 }
+
+export interface IMainBanner {
+  food: IMenuItem;
+  isMobileView: boolean;
+}
+
+export interface IBlogItem {
+  title: string,
+  description: string,
+  link?: string,
+  date:number,
+  views:number,
+  type?:string,
+  img?:string,
+}
+export interface IBlogBanner {
+  banner: IBlogItem;
+}
