@@ -115,3 +115,23 @@ a {
   color: white;
   &:visited {color: white}
 }
+
+.title{
+  color: #212529;
+  font-family: RF Rufo, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  @media screen and (max-width:768px) {
+    font-size: 28px;
+  }
+}
+
+.navHistory {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}

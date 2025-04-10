@@ -82,6 +82,7 @@ import {ReactComponent as Views} from './svg/eye.svg'
 //etc
 import mapBG from './svg/map.svg'
 import samurai from './png/samurai.png'
+import mapCity from './png/map.png'
 
 export {
   ArrLeftBtn,
@@ -114,6 +115,7 @@ export {
   instagram,
   logo,
   mapBG,
+  mapCity,
   mastercard,
   menu,
   more,

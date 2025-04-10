@@ -6,18 +6,19 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Layout from "./components/layout";
 import {ErrorPage} from "./components/err";
 import Main from "./pages/Main";
-import Blog from "./pages/Blog";
-
+import BlogPage from "./pages/Blog";
+import DeliveryPage from "./pages/Delivery";
 
 
 const router = createBrowserRouter([
   {
-    element: <Layout />,
-    errorElement: <ErrorPage />,
+    element: <Layout/>,
+    errorElement: <ErrorPage/>,
     children: [
-      { path: "/", element: <Main /> },
+      {path: "/", element: <Main/>},
       // { path: "about", element: <AboutUs /> },
-      { path: "blog", element: <Blog /> },
+      {path: "blog", element: <BlogPage/>},
+      {path: "delivery", element: <DeliveryPage/>},
       // {
       //   path: "menu",
       //   element: <MenuLayout />, // Новий Layout для меню
@@ -31,12 +32,12 @@ const router = createBrowserRouter([
 ]);
 
 export const App = () => {
-  return <RouterProvider router={router} />;
+  return <RouterProvider router={router}/>;
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <React.StrictMode>
-    <App />
+    <App/>
   </React.StrictMode>
 );

@@ -329,3 +329,22 @@ export const bannersList: IBlogItem[] = [
 
 export const primaryBanner = bannersList[0]
 export const bannersArr = bannersList.slice(1)
+
+export const deliveryInfo = [
+  {
+    title: "Доставка по Харькову",
+    list: [
+      "Бесплатная доставка от 300 ₴",
+      "Привозим в среднем за 35 минут",
+      "Работаем ежедневно с 11:00 до 23:00"
+    ]
+  },
+  {
+    title: "Оплата",
+    list: [
+      "Картой на сайте",
+      "Курьеру наличными",
+      "Курьеру картой"
+    ]
+  }
+];

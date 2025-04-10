@@ -6,8 +6,9 @@ import {useEffect, useState} from "react";
 import {Banner} from "../../components/layout/Blog/Banner";
 import {Button} from "../../components/button";
 import {arrowDownMore} from "../../assets";
+import {NavHistory} from "../../components/navHistory";
 
-const Blog = () => {
+const BlogPage = () => {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth < 768);
   const [isSetShown, setIsSetShown] = useState(false);
 
@@ -23,16 +24,12 @@ const Blog = () => {
 
   return (
     <div className="blog">
-      {!isSetShown ? <div className="navHistory">
-        <Link to={"/"} style={{color: 'black'}}>Main</Link>
-        <div className="circle"
-             style={{width: '4px', height: '4px', backgroundColor: 'red', borderRadius: '100%'}}></div>
-        <Link to={'/blog'} style={{color: '#97a3a6'}}>Blog</Link>
-      </div> : <Link to={'/blog'}>Return to list</Link>
+      {!isSetShown ? <NavHistory/>:
+        <Link to={'/blog'}>Return to list</Link>
       }
       <div className="blog__body">
         <div className="blog__upper">
-          <span className="blog__title">Blog</span>
+          <span className="blog__title title">Blog</span>
           {
             isMobileView ?
               <Banner
@@ -72,4 +69,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default BlogPage
