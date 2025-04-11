@@ -22,7 +22,45 @@ import {IAdvantage, IBlogBanner, IBlogItem, IMenuCategory, IMenuItem} from "./in
 
 export const timestampToDMY = (timestamp: number) => format(new Date(timestamp), 'dd.MM.yyyy')
 export const timestampToDMYNumStrNum = (timestamp: number) => format(new Date(timestamp), 'dd.MM.yyyy')
-
+export const contactsInfo = [
+  {
+    title: 'Phone numbers',
+    content: [
+      '+38 (099) 123-45-67',
+      '+38 (099) 123-45-67',
+      '+38 (099) 123-45-67'
+    ]
+  }, {
+    title: 'Feedback',
+    content: [
+      'Пожелания и замечания для поддержки и контроля качества вы можете отправить нам на почту mail@gmail.com'
+    ]
+  }, {
+    title: 'corpo clients',
+    content: [
+      'Для заключения договоров на корпоративное питание или поставки продукции отправьте запрос на почту mail@gmail.com'
+    ]
+  }, {
+    title: 'To the Suppliers',
+    content: [
+      'Ждём ваши предложения на почту mail@gmail.com'
+    ]
+  }, {
+    title: 'ad offers',
+    content: [
+      'Ваши идеи и предложения по рекламе/ кросс-промо присылайте на почту mail@gmail.com'
+    ]
+  }, {
+    title: 'details',
+    content: [
+      'ОО «БЛЕКСУШИ»',
+      'ИНН: 7743357003',
+      'КПП: 774301001',
+      'ОГРН: 1217700130713',
+      'Юр. адрес: 125130, г. Харьков, вн.тер.г.муниципальный округ Войковский'
+    ]
+  }
+];
 
 
 export const categoryList: IMenuCategory[] = [

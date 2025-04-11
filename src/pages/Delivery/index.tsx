@@ -2,7 +2,7 @@ import {DeliveryInfo} from "./info";
 import './styles.scss'
 import {useEffect, useState} from "react";
 import {mapCity} from "../../assets";
-import {NavHistory} from "../../components/navHistory";
+import {NavHistory} from "../../components/NavHistory";
 
 const DeliveryPage = () => {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);

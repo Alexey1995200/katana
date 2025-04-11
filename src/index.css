@@ -95,12 +95,9 @@
 
 body {
   margin: 0;
-  font-family:
-    Gerbera, /*instead of Gerbera*/
-/*    Oswald, /*instead of RF Rufo*/
-    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Gerbera, /*instead of Gerbera*/ /*    Oswald, /*instead of RF Rufo*/ -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #F1F5F6;
@@ -108,15 +105,18 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
 }
 
 a {
   color: white;
-  &:visited {color: white}
+
+  &:visited {
+    color: white
+  }
 }
 
-.title{
+.title {
   color: #212529;
   font-family: RF Rufo, sans-serif;
   font-size: 32px;
@@ -124,7 +124,7 @@ a {
   line-height: 140%;
   letter-spacing: 4%;
   text-transform: uppercase;
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     font-size: 28px;
   }
 }

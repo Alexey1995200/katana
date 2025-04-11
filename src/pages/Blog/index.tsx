@@ -6,7 +6,7 @@ import {useEffect, useState} from "react";
 import {Banner} from "../../components/layout/Blog/Banner";
 import {Button} from "../../components/button";
 import {arrowDownMore} from "../../assets";
-import {NavHistory} from "../../components/navHistory";
+import {NavHistory} from "../../components/NavHistory";
 
 const BlogPage = () => {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth < 768);

@@ -8,6 +8,7 @@ import {ErrorPage} from "./components/err";
 import Main from "./pages/Main";
 import BlogPage from "./pages/Blog";
 import DeliveryPage from "./pages/Delivery";
+import Contacts from "./pages/Contacts";
 
 
 const router = createBrowserRouter([
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       // { path: "about", element: <AboutUs /> },
       {path: "blog", element: <BlogPage/>},
       {path: "delivery", element: <DeliveryPage/>},
+      {path: "contacts", element:<Contacts/>}
       // {
       //   path: "menu",
       //   element: <MenuLayout />, // Новий Layout для меню
