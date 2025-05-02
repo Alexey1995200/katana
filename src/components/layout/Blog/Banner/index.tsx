@@ -4,7 +4,9 @@ import {Calendar, Views} from "../../../../assets";
 import {timestampToDMYNumStrNum} from "../../../const";
 import {ButtonBorder} from "../../../buttonBorder";
 
-export const Banner = ({banner}: IBlogBanner) => {
+export const Banner = ({
+                         banner, setCurrentSet
+}: IBlogBanner) => {
   return (<div className="banner">
     <div className="image"
          style={{
@@ -18,13 +20,14 @@ export const Banner = ({banner}: IBlogBanner) => {
       <div className="views"><Views color='black'/>{banner.views}</div>
     </div>
     <div className="text">
-      <div className="title">{banner.title}</div>
-      <div className="description">{banner.description}</div>
+      <div className="text_title">{banner.title}</div>
+      <div className="text_description">{banner.description}</div>
     </div>
     <ButtonBorder
       style={{marginTop: 'auto'}}
       title={'view'}
       color={'black'}
+      onClick={() => setCurrentSet(banner)}
     />
   </div>)
 }

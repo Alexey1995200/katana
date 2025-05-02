@@ -34,7 +34,7 @@ const Footer = () => {
       link: '/reviews',
     }, {
       title: 'Contacts',
-      link: '/contact',
+      link: '/contacts',
     }
   ]
   const socials: ISocial[] = [

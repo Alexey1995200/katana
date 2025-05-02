@@ -63,10 +63,10 @@
 
 
 @font-face {
-  font-family: 'Gerbera Bold';
+  font-family: 'Gerbera-Bold';
   font-style: normal;
   font-weight: normal;
-  src: local('Gerbera Bold'), url('assets/fonts/Gerbera-Bold.woff') format('woff');
+  src: local('Gerbera-Bold'), url('assets/fonts/Gerbera-Bold.woff') format('woff');
 }
 
 
@@ -117,13 +117,14 @@ a {
 }
 
 .title {
-  color: #212529;
   font-family: RF Rufo, sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 140%;
   letter-spacing: 4%;
   text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 32px;
   @media screen and (max-width: 768px) {
     font-size: 28px;
   }

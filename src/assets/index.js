@@ -10,6 +10,7 @@ import arrowDown from './svg/arrowDown.svg';
 import arrowDownMore from './svg/arrDnMore.svg';
 import arrLeft from './svg/arrLeft.svg';
 import arrRight from './svg/arrRight.svg';
+import arrBack from './svg/arrBackOrange.svg';
 import closeBtn from './svg/close.svg';
 import placeholder from './jpeg/placeholder.jpg';
 
@@ -17,9 +18,14 @@ import {ReactComponent as ArrLeftBtn} from './svg/arrLeft.svg'
 import {ReactComponent as ArrRightBtn} from './svg/arrRight.svg'
 //socials
 import facebook from './svg/fb.svg'
+import fb_btn from './svg/fb_btn.svg'
 import instagram from './svg/inst.svg'
+import insta_btn from './svg/insta_btn.svg'
 import telegram from './svg/tg.svg'
+import tg from './svg/tg_color.svg'
+import tg_btn from './svg/tg_btn.svg'
 import youtube from './svg/yt.svg'
+import viber from './svg/viber_color.svg'
 
 //payment
 import mastercard from './svg/mc.svg';
@@ -85,6 +91,7 @@ import samurai from './png/samurai.png'
 import mapCity from './png/map.png'
 
 export {
+  arrBack,
   ArrLeftBtn,
   ArrRightBtn,
   arrLeft,
@@ -104,7 +111,7 @@ export {
   closeBtn,
   dessertIco,
   dessetPhoto,
-  facebook,
+  facebook, fb_btn,
   fish,
   flowers,
   footerLogo,
@@ -112,7 +119,7 @@ export {
   hotIco,
   hotPhoto,
   information,
-  instagram,
+  instagram, insta_btn,
   logo,
   mapBG,
   mapCity,
@@ -140,10 +147,10 @@ export {
   spicyIco,
   sushiIco,
   sushiPhoto,
-  telegram,
+  telegram, tg, tg_btn,
   turtle,
   veganIco,
-  veganPhoto,
+  veganPhoto, viber,
   visa,
   Views,
   wokIco,

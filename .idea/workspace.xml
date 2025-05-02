@@ -5,20 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="179b2a66-1950-40e6-8db9-40d8811725cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/layout/styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Contacts/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Contacts/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/arrBackOrange.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/fb_btn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/insta_btn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/tg_btn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/tg_color.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/viber_color.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/const.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/const.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/err/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/err/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/interface.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/interface.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Blog/Banner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Blog/Banner/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Blog/Banner/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Blog/Banner/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Blog/DesktopPrimaryBanner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Blog/DesktopPrimaryBanner/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Blog/DesktopPrimaryBanner/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Blog/DesktopPrimaryBanner/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Footer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/footer/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Footer/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/header/sidebarMenu/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header/sidebarMenu/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/header/sidebarMenu/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header/sidebarMenu/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/header/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navHistory/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavHistory/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navHistory/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavHistory/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Blog/CurrentSet/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog/CurrentSet/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Blog/CurrentSet/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog/CurrentSet/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Blog/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Blog/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Delivery/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Delivery/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Main/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Contacts/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contacts/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Contacts/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contacts/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,22 +70,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alexe/Documents/GitHub/katana/src/assets/jpeg&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\alexe\\Documents\\GitHub\\katana\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/alexe/Documents/GitHub/katana/src/assets/svg",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Users\\alexe\\Documents\\GitHub\\katana\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -82,6 +97,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alexe\Documents\GitHub\katana\src\assets\svg" />
       <recent name="C:\Users\alexe\Documents\GitHub\katana\src\assets\jpeg" />
       <recent name="C:\Users\alexe\Documents\GitHub\katana\src\components\layout" />
       <recent name="C:\Users\alexe\Documents\GitHub\katana\src\assets\fonts" />
@@ -126,7 +142,13 @@
       <workItem from="1743743050343" duration="10454000" />
       <workItem from="1744014709238" duration="534000" />
       <workItem from="1744015515259" duration="16715000" />
-      <workItem from="1744280076074" duration="13140000" />
+      <workItem from="1744280076074" duration="15470000" />
+      <workItem from="1744718041839" duration="2740000" />
+      <workItem from="1745308260837" duration="751000" />
+      <workItem from="1745317351402" duration="9632000" />
+      <workItem from="1745817386708" duration="1555000" />
+      <workItem from="1745989502830" duration="1792000" />
+      <workItem from="1746176749392" duration="16122000" />
     </task>
     <servers />
   </component>

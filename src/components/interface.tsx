@@ -31,6 +31,10 @@ export interface IMainBanner {
 export interface IBlogItem {
   title: string,
   description: string,
+  detailedDescription?: {
+    descriptionTitle: string,
+    descriptionPoints: string[]
+  },
   link?: string,
   date:number,
   views:number,
@@ -39,4 +43,6 @@ export interface IBlogItem {
 }
 export interface IBlogBanner {
   banner: IBlogItem;
+  // setCurrentSet: (banner: IBlogItem) => void;
+  setCurrentSet: React.Dispatch<React.SetStateAction<IBlogItem | null>>;
 }

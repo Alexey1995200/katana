@@ -279,6 +279,15 @@ export const bannersList: IBlogItem[] = [
   {
     title: 'Premium Set with a Discount',
     description: 'Get one of two sticker packs as a gift when ordering the New Year’s special "Turkey in Mandarins". Try it and enjoy! Limited number of sticker packs available.',
+    detailedDescription:{
+      descriptionTitle: "Уже придумали блюда на новогодний стол? Мы предлагаем не тратить время на раздумья и долгую готовку — предоставьте это нам!",
+      descriptionPoints: [
+        "Акція діє лише для замовлень, оформлених заздалегідь і оплачених 31 грудня.",
+        "Інші знижки та акції не поширюються на акційний сет, але діють на інші позиції в чеку.",
+        "Акція не дійсна для попередніх замовлень з датою отримання, що відрізняється від 31 грудня.",
+        "Якщо замовлення оформлене 31 грудня, але отримання — в інший день, акція не діє.",
+        "31 грудня замовлення приймаються з 11:00 до 20:00."
+      ]},
     date: 1700000000,
     views: 375,
     img: primaryBannerPng
