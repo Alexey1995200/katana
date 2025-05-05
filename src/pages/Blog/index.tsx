@@ -1,4 +1,3 @@
-import {Link} from "react-router-dom";
 import './styles.scss'
 import {DesktopPrimaryBanner} from "../../components/layout/Blog/DesktopPrimaryBanner";
 import {bannersArr, primaryBanner} from "../../components/const";
@@ -8,7 +7,7 @@ import {Button} from "../../components/button";
 import {arrBack, arrowDownMore} from "../../assets";
 import {NavHistory} from "../../components/NavHistory";
 import {CurrentSet} from "./CurrentSet";
-import {IBlogBanner, IBlogItem} from "../../components/interface";
+import {IBlogItem} from "../../components/interface";
 
 const BlogPage = () => {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth < 768);

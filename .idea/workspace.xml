@@ -5,35 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="179b2a66-1950-40e6-8db9-40d8811725cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/arrBackOrange.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/fb_btn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/insta_btn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/tg_btn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/tg_color.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/viber_color.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/const.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/const.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/err/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/err/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/interface.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/interface.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Blog/Banner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Blog/Banner/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Blog/Banner/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Blog/Banner/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Blog/DesktopPrimaryBanner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Blog/DesktopPrimaryBanner/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Blog/DesktopPrimaryBanner/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Blog/DesktopPrimaryBanner/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Footer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/footer/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Footer/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/header/sidebarMenu/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header/sidebarMenu/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/header/sidebarMenu/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header/sidebarMenu/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/header/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Blog/CurrentSet/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog/CurrentSet/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Blog/CurrentSet/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog/CurrentSet/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Blog/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Blog/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Contacts/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contacts/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Contacts/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contacts/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Delivery/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Delivery/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Delivery/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Delivery/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +125,7 @@
       <workItem from="1745317351402" duration="9632000" />
       <workItem from="1745817386708" duration="1555000" />
       <workItem from="1745989502830" duration="1792000" />
-      <workItem from="1746176749392" duration="16122000" />
+      <workItem from="1746176749392" duration="18761000" />
     </task>
     <servers />
   </component>

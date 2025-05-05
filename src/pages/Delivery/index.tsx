@@ -19,14 +19,14 @@ const DeliveryPage = () => {
 
   <div className='delivery'>
     <NavHistory/>
-    <span className="delivery__title title">Delivery and Payment</span>
+    <span className="title">Delivery and Payment</span>
       {!isMobileView ?
-        <div className='deliveryInfo__map' style={{backgroundImage: `url(${mapCity})`,height:'700px'}}>
+        <div className='deliveryInfo__map' style={{backgroundImage: `url(${mapCity})`,height:'700px',backgroundSize: 'cover', backgroundPosition: 'center'}}>
           <DeliveryInfo/>
         </div>
         : <>
           <DeliveryInfo/>
-          <div className='deliveryInfo__map' style={{backgroundImage: `url(${mapCity})`, aspectRatio: 1}}/>
+          <div className='deliveryInfo__map' style={{backgroundImage: `url(${mapCity})`, aspectRatio: 1, backgroundSize: 'cover', backgroundPosition: 'center'}}/>
         </>
       }
     </div>
