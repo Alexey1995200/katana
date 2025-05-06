@@ -13,6 +13,8 @@ import arrRight from './svg/arrRight.svg';
 import arrBack from './svg/arrBackOrange.svg';
 import closeBtn from './svg/close.svg';
 import placeholder from './jpeg/placeholder.jpg';
+import bin from './svg/bin.svg';
+import emptyCart from './png/emptyCart.png';
 
 import {ReactComponent as ArrLeftBtn} from './svg/arrLeft.svg'
 import {ReactComponent as ArrRightBtn} from './svg/arrRight.svg'
@@ -85,6 +87,7 @@ import information from './svg/info.svg'
 import {ReactComponent as Calendar} from './svg/calendar.svg'
 import {ReactComponent as Views} from './svg/eye.svg'
 
+
 //etc
 import mapBG from './svg/map.svg'
 import samurai from './png/samurai.png'
@@ -101,7 +104,7 @@ export {
   badminton,
   bag,
   banner1, banner2, banner3, banner4, banner5, banner6,
-  bg,
+  bg, bin,
   bull,
   Calendar,
   cart,
@@ -111,6 +114,7 @@ export {
   closeBtn,
   dessertIco,
   dessetPhoto,
+  emptyCart,
   facebook, fb_btn,
   fish,
   flowers,

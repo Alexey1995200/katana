@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="179b2a66-1950-40e6-8db9-40d8811725cb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/bin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/QuantitySelector/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/QuantitySelector/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/Cart/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/Cart/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Blog/CurrentSet/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog/CurrentSet/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Blog/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Blog/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Delivery/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Delivery/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Delivery/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Delivery/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Contacts/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contacts/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +129,7 @@
       <workItem from="1745317351402" duration="9632000" />
       <workItem from="1745817386708" duration="1555000" />
       <workItem from="1745989502830" duration="1792000" />
-      <workItem from="1746176749392" duration="18761000" />
+      <workItem from="1746176749392" duration="43685000" />
     </task>
     <servers />
   </component>

@@ -16,7 +16,6 @@ const Contacts = () => {
               if (emailMatch) {
                 const email = emailMatch[0];
                 const parts = item.split(email);
-
                 return (
                   <p key={i} className="item__content">
                     {parts[0]}

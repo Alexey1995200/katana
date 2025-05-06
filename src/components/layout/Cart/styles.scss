@@ -1,0 +1,159 @@
+.cart {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  height: 100dvh;
+  background-color: white;
+  color: black;
+  width: 480px;
+  z-index: 10;
+  padding: 56px 40px 0 40px;
+
+  .empty {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin: auto;
+
+    .upper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+
+      img {
+        max-height: 200px;
+        max-width: 200px;
+      }
+
+      span {
+        color: #212529;
+        font-family: RF Rufo;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 140%;
+        letter-spacing: 4%;
+        text-transform: uppercase;
+      }
+    }
+
+  }
+
+  .header {
+    color: #b0b9bc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+
+
+    .title {
+      color: black;
+      padding: 0;
+    }
+
+    .bin {
+      display: flex;
+      gap: 2px;
+      align-items: flex-end;
+      color: #b0b9bc;
+    }
+  }
+
+  .items {
+    overflow-y: auto;
+    height: calc(100dvh - 124px - 68px - 40px - 32px); //todo remake
+
+    .item {
+      padding: 20px 0;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
+      border-bottom: 1px solid #f3f5f6;
+
+      img {
+        max-width: 120px;
+        max-height: 96px;
+        border-radius: 12px
+      }
+
+      .desc {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 12px;
+
+        .upper {
+          display: flex;
+          flex-direction: row;
+          width: auto;
+          justify-content: space-between;
+
+        }
+
+        .lower {
+          display: flex;
+          flex-direction: row;
+          gap: 24px;
+          align-items: center;
+
+          .price {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            align-items: center;
+
+            .new {
+              color: #212529;
+              font-size: 20px;
+            }
+
+            .old {
+              text-decoration: line-through;
+              color: #97a3a6;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .total {
+    border-top: 1px solid #e1e7e9;
+    padding: 32px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      .str {
+        color: rgb(151, 163, 166);
+        font-size: 14px;
+        line-height: 140%;
+      }
+
+      .money {
+        color: rgb(33, 37, 41);
+        font-size: 27px;
+        line-height: 140%;
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

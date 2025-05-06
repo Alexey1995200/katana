@@ -6,6 +6,7 @@ import {Link, useNavigate} from "react-router-dom";
 import {ButtonBorder} from "../../components/buttonBorder";
 import {DishBanner_adaptive} from "../../components/layout/Main/dishBanner_adaptive";
 import {DishBanner_fixed} from "../../components/layout/Main/dishBanner_fixed";
+import {Cart} from "../../components/layout/Cart";
 
 
 const getFoodCount = (width: number) => {
@@ -120,6 +121,7 @@ const Main = () => {
           zIndex: "99"
         }}>This resolution is not
           supported</div>}
+      <Cart/>
       <div className={`main__adv ${screenWidth < 769 && 'overflow'}`} ref={advRef}>
         {shownAdvantages.map((advantage, i) => {
           return (
