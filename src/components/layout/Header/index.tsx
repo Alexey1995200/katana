@@ -1,9 +1,10 @@
 import {arrowDown, cart, headerBG, logo, menu, phone} from "../../../assets";
 import './styles.scss'
 import MenuCategoryList from "../MenuCategoryList";
-import React from "react";
 import {SidebarMenu} from "./sidebarMenu";
 import {Link} from "react-router-dom";
+import {useState} from "react";
+import {Cart} from "../Cart";
 
 interface ILang {
   title: string,
@@ -47,9 +48,13 @@ const languages: ILang[] = [
 
 
 const Header = () => {
-  const [isMenuOpened, setIsMenuOpened] = React.useState(false);
+  const [isMenuOpened, setIsMenuOpened] = useState(false)
+  const [isCartShown, setIsCartShown] = useState(false);
   return (
     <>
+      {isCartShown && <Cart
+        setIsCartShown={setIsCartShown}
+      />}
       {isMenuOpened &&
         <SidebarMenu
           setIsMenuOpened={setIsMenuOpened}
@@ -62,7 +67,7 @@ const Header = () => {
           </div>
           <div className="header-right">
             <div className="header__buttons">
-              <button>
+              <button onClick={()=>setIsCartShown(!isCartShown)}>
                 <img src={cart} alt="cart"/>
               </button>
               <button

@@ -121,7 +121,6 @@ const Main = () => {
           zIndex: "99"
         }}>This resolution is not
           supported</div>}
-      <Cart/>
       <div className={`main__adv ${screenWidth < 769 && 'overflow'}`} ref={advRef}>
         {shownAdvantages.map((advantage, i) => {
           return (

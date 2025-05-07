@@ -1,5 +1,6 @@
 //layout
 import logo from './svg/logo.svg';
+// import {ReactComponent as LogoComponent} from './svg/logo.svg'
 import bg from './jpeg/bg2.jpg';
 import footerLogo from './svg/mount.svg';
 import headerBG from './png/headerBG.png'
@@ -159,5 +160,5 @@ export {
   Views,
   wokIco,
   wokPhoto,
-  youtube
+  youtube,
 };
