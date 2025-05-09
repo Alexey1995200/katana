@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="179b2a66-1950-40e6-8db9-40d8811725cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/LogoComponent/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LogoComponent/styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/MobileWhiteHeader/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/MobileWhiteHeader/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/svg/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/QuantitySelector/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuantitySelector/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Cart/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Cart/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Cart/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Cart/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/const.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/const.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/interface.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/interface.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,22 +44,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/alexe/Documents/GitHub/katana/src/assets/svg",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\alexe\\Documents\\GitHub\\katana\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alexe/Documents/GitHub/katana/src/assets/svg&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\alexe\\Documents\\GitHub\\katana\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -131,7 +122,8 @@
       <workItem from="1745317351402" duration="9632000" />
       <workItem from="1745817386708" duration="1555000" />
       <workItem from="1745989502830" duration="1792000" />
-      <workItem from="1746176749392" duration="49041000" />
+      <workItem from="1746176749392" duration="51887000" />
+      <workItem from="1746606421925" duration="5130000" />
     </task>
     <servers />
   </component>

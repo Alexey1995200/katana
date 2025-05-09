@@ -14,6 +14,7 @@ export interface IAdvantage {
 export interface IMenuItem {
   title: string;
   img: string;
+  foodType:string;
   price: number;
   oldPrice?: number;
   weight?: number;
