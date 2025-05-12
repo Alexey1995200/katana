@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import {arrBack, Calendar, fb_btn, insta_btn, telegram, tg_btn, Views} from "../../../assets";
-import {IBlogItem} from "../../../components/interface";
-import {timestampToDMYNumStrNum} from "../../../components/const";
+import {IBlogItem} from "../../../interface";
+import {timestampToDMYNumStrNum} from "../../../const";
 import './styles.scss'
 
 interface ICurrentSet {

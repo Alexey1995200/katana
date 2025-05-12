@@ -1,4 +1,4 @@
-import {deliveryInfo} from "../../../components/const";
+import {deliveryInfo} from "../../../const";
 import './styles.scss'
 export const DeliveryInfo = () => {
   return (

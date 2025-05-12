@@ -1,6 +1,6 @@
 import {chefsRec, information, newIco, spicyIco} from "../../../../assets";
 import {Button} from "../../../button";
-import {IMainBanner} from "../../../interface";
+import {IMainBanner} from "../../../../interface";
 import {useNavigate} from "react-router-dom";
 
 export const DishBanner_adaptive = ({food, isMobileView}: IMainBanner) => {

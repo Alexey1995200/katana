@@ -1,4 +1,4 @@
-import {advantages, categoryList, food,} from "../../components/const";
+import {advantages, categoryList, food,} from "../../const";
 import './styles.scss'
 import {useEffect, useMemo, useRef, useState} from "react";
 import {ArrLeftBtn, ArrRightBtn, mapBG, more, samurai} from "../../assets";

@@ -1,6 +1,6 @@
 import './styles.scss'
-import {IBlogBanner} from "../../../interface";
-import {timestampToDMYNumStrNum} from "../../../const";
+import {IBlogBanner} from "../../../../interface";
+import {timestampToDMYNumStrNum} from "../../../../const";
 import {ButtonBorder} from "../../../buttonBorder";
 import {Calendar, Views} from "../../../../assets";
 

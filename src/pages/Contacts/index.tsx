@@ -1,6 +1,6 @@
 import './styles.scss'
 import {NavHistory} from "../../components/NavHistory";
-import {contactsInfo} from "../../components/const";
+import {contactsInfo} from "../../const";
 
 const Contacts = () => {
   return (

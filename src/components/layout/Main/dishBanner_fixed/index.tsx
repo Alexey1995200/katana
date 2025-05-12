@@ -1,7 +1,7 @@
 import {chefsRec, information, newIco, spicyIco} from "../../../../assets";
 import {Button} from "../../../button";
 import {useNavigate} from "react-router-dom";
-import {IMainBanner} from "../../../interface";
+import {IMainBanner} from "../../../../interface";
 
 export const DishBanner_fixed = ({food, isMobileView}: IMainBanner) => {
   const navigate = useNavigate()

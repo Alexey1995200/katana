@@ -1,7 +1,7 @@
 import './styles.scss'
-import {IBlogBanner} from "../../../interface";
+import {IBlogBanner} from "../../../../interface";
 import {Calendar, Views} from "../../../../assets";
-import {timestampToDMYNumStrNum} from "../../../const";
+import {timestampToDMYNumStrNum} from "../../../../const";
 import {ButtonBorder} from "../../../buttonBorder";
 
 export const Banner = ({

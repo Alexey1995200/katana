@@ -1,152 +1,5 @@
-import {format} from "date-fns";
-import {
-  badminton,
-  bag, banner1, banner2, banner3, banner4, banner5, banner6, bull,
-  childIco, childPhoto,
-  dessertIco, dessetPhoto, fish, flowers,
-  hotIco, hotPhoto, neko,
-  pizzaIco, pizzaPhoto, primaryBannerPng,
-  rollsIco, rollsPhoto,
-  saladIco, saladPhoto,
-  setIco,
-  setPhoto,
-  snackIco, snackPhoto,
-  soupIco, soupPhoto,
-  sushiIco, sushiPhoto, turtle,
-  veganIco, veganPhoto,
-  wokIco, wokPhoto
-} from "../assets";
-import {IAdvantage, IBlogBanner, IBlogItem, IMenuCategory, IMenuItem} from "./interface";
-
-// export const screenWidth: number = window.innerWidth
-
-export const timestampToDMY = (timestamp: number) => format(new Date(timestamp), 'dd.MM.yyyy')
-export const timestampToDMYNumStrNum = (timestamp: number) => format(new Date(timestamp), 'dd.MM.yyyy')
-export const contactsInfo = [
-  {
-    title: 'Phone numbers',
-    content: [
-      '+38 (099) 123-45-67',
-      '+38 (099) 123-45-67',
-      '+38 (099) 123-45-67'
-    ]
-  }, {
-    title: 'Feedback',
-    content: [
-      'Пожелания и замечания для поддержки и контроля качества вы можете отправить нам на почту mail@gmail.com'
-    ]
-  }, {
-    title: 'corpo clients',
-    content: [
-      'Для заключения договоров на корпоративное питание или поставки продукции отправьте запрос на почту mail@gmail.com'
-    ]
-  }, {
-    title: 'To the Suppliers',
-    content: [
-      'Ждём ваши предложения на почту mail@gmail.com'
-    ]
-  }, {
-    title: 'ad offers',
-    content: [
-      'Ваши идеи и предложения по рекламе/ кросс-промо присылайте на почту mail@gmail.com'
-    ]
-  }, {
-    title: 'details',
-    content: [
-      'ОО «БЛЕКСУШИ»',
-      'ИНН: 7743357003',
-      'КПП: 774301001',
-      'ОГРН: 1217700130713',
-      'Юр. адрес: 125130, г. Харьков, вн.тер.г.муниципальный округ Войковский'
-    ]
-  }
-];
-
-
-export const categoryList: IMenuCategory[] = [
-  {
-    title: "Sets",
-    link: "/menu/sets",
-    ico: setIco,
-    img: setPhoto
-  }, {
-    title: "Pizza",
-    link: "/menu/pizza",
-    ico: pizzaIco,
-    img: pizzaPhoto
-  }, {
-    title: "Soups",
-    link: "/menu/soups",
-    ico: soupIco,
-    img: soupPhoto
-  }, {
-    title: "Hot",
-    link: "/menu/hot",
-    ico: hotIco,
-    img: hotPhoto
-  }, {
-    title: "Rolls",
-    link: "/menu/rolls",
-    ico: rollsIco,
-    img: rollsPhoto
-  }, {
-    title: "Salads",
-    link: "/menu/salads",
-    ico: saladIco,
-    img: saladPhoto
-  }, {
-    title: "Sushi",
-    link: "/menu/sushi",
-    ico: sushiIco,
-    img: sushiPhoto
-  }, {
-    title: "Wok",
-    link: "/menu/wok",
-    ico: wokIco,
-    img: wokPhoto
-  }, {
-    title: "Snacks",
-    link: "/menu/snacks",
-    ico: snackIco,
-    img: snackPhoto
-  }, {
-    title: "Children's",
-    link: "/menu/children",
-    ico: childIco,
-    img: childPhoto
-  }, {
-    title: "Vegan",
-    link: "/menu/vegan",
-    ico: veganIco,
-    img: veganPhoto
-  }, {
-    title: "Desserts",
-    link: "/menu/desserts",
-    ico: dessertIco,
-    img: dessetPhoto
-  }
-]
-
-export const advantages: IAdvantage[] = [
-  {ico: turtle, text: "Всегда бесплатная доставка", isOutlined: true},
-  {ico: bag, text: "Доступ к выгодным пиццам!", isOutlined: true},
-  {ico: fish, text: "Вкуснейшие рыбные новинки"},
-  {ico: badminton, text: "Мы обновили комбо!", isOutlined: true},
-  {ico: neko, text: "Получите бонусы за первый заказ"},
-  {ico: bull, text: "Дарим магнитик при заказе суши", isOutlined: true},
-  {ico: flowers, text: "Горячие новинки!", isOutlined: true}
-];
-
-const FOOD_TYPES = {
-  sushi: {
-    set: "sushiSet",
-    sushi: "sushi",
-    rolls: "sushiRolls",
-  },
-  pizza: "pizza",
-  etc: "etc"
-}
-
+import {IMenuItem} from "./interface";
+import {FOOD_TYPES} from "./const";
 
 export const food: IMenuItem[] = [
   {
@@ -750,128 +603,594 @@ export const food: IMenuItem[] = [
     oldPrice: 2182,
     weight: 2060,
     description: "Філадельфія з лососем, Філадельфія з лососем в кунжуті, Філадельфія з тунцем, Філадельфія з креветкою в кунжуті, Філадельфія з креветкою, Каліфорнія з вугрем в кунжуті, Кранч з креветкою, Футомакі з креветкою у темпурі. Соєвий соус - 160 мл (4 шт). Імбир - 50 г. Васабі - 15 г."
-  }
-
-];
-
-export const bannersList: IBlogItem[] = [
-  {
-    title: 'Premium Set with a Discount',
-    description: 'Get one of two sticker packs as a gift when ordering the New Year’s special "Turkey in Mandarins". Try it and enjoy! Limited number of sticker packs available.',
-    detailedDescription: {
-      descriptionTitle: "Уже придумали блюда на новогодний стол? Мы предлагаем не тратить время на раздумья и долгую готовку — предоставьте это нам!",
-      descriptionPoints: [
-        "Акція діє лише для замовлень, оформлених заздалегідь і оплачених 31 грудня.",
-        "Інші знижки та акції не поширюються на акційний сет, але діють на інші позиції в чеку.",
-        "Акція не дійсна для попередніх замовлень з датою отримання, що відрізняється від 31 грудня.",
-        "Якщо замовлення оформлене 31 грудня, але отримання — в інший день, акція не діє.",
-        "31 грудня замовлення приймаються з 11:00 до 20:00."
-      ]
-    },
-    date: 1700000000,
-    views: 375,
-    img: primaryBannerPng
-  }, {
-    title: 'Discounts, Tasting, and a Win-Win Lottery',
-    description: 'Get one of two sticker packs as a gift when ordering the New Year’s special "Turkey in Mandarins". Try it and enjoy! Limited number of sticker packs available.',
-    date: 1700100000,
-    views: 1563,
-    type: "promo",
-    img: banner1
-  }, {
-    title: 'Winter Set for 199 ₴',
-    description: 'Curious about how pizza is made? We invite you to watch the process live!',
-    date: 1700200000,
-    views: 1235,
-    img: banner2
-  }, {
-    title: 'Winter Specials',
-    description: 'Your favorite dishes are now closer, and the ordering process is even more enjoyable with our stylish new app!',
-    date: 1700300000,
-    views: 1239,
-    img: banner3
-  }, {
-    title: 'A Gift from Katana',
-    description: 'Get one of two sticker packs as a gift when ordering the New Year’s special "Turkey in Mandarins". Try it and enjoy! Limited number of sticker packs available.',
-    date: 1700400000,
-    views: 1981,
-    type: "present",
-    img: banner4
-  }, {
-    title: 'Up to 30% Discounts on Corporate Orders',
-    description: 'Curious about how pizza is made? We invite you to watch the process live!',
-    date: 1700500000,
-    views: 982,
-    type: "offer",
-    img: banner5
-  }, {
-    title: 'Celebrating a Birthday?',
-    description: 'Your favorite dishes are now closer, and the ordering process is even more enjoyable with our stylish new app!',
-    date: 1700600000,
-    views: 3581,
-    type: "promo",
-    img: banner6
-  }, {
-    title: 'Discounts, Tasting, and a Win-Win Lottery',
-    description: 'Get one of two sticker packs as a gift when ordering the New Year’s special "Turkey in Mandarins". Try it and enjoy! Limited number of sticker packs available.',
-    date: 1700100000,
-    views: 1563,
-    type: "promo",
-    img: banner1
-  }, {
-    title: 'Winter Set for 199 ₴',
-    description: 'Curious about how pizza is made? We invite you to watch the process live!',
-    date: 1700200000,
-    views: 1235,
-    img: banner2
-  }, {
-    title: 'Winter Specials',
-    description: 'Your favorite dishes are now closer, and the ordering process is even more enjoyable with our stylish new app!',
-    date: 1700300000,
-    views: 1239,
-    img: banner3
-  }, {
-    title: 'A Gift from Katana',
-    description: 'Get one of two sticker packs as a gift when ordering the New Year’s special "Turkey in Mandarins". Try it and enjoy! Limited number of sticker packs available.',
-    date: 1700400000,
-    views: 1981,
-    type: "present",
-    img: banner4
-  }, {
-    title: 'Up to 30% Discounts on Corporate Orders',
-    description: 'Curious about how pizza is made? We invite you to watch the process live!',
-    date: 1700500000,
-    views: 982,
-    type: "offer",
-    img: banner5
-  }, {
-    title: 'Celebrating a Birthday?',
-    description: 'Your favorite dishes are now closer, and the ordering process is even more enjoyable with our stylish new app!',
-    date: 1700600000,
-    views: 3581,
-    type: "promo",
-    img: banner6
-  }
-];
-
-export const primaryBanner = bannersList[0]
-export const bannersArr = bannersList.slice(1)
-
-export const deliveryInfo = [
-  {
-    title: "Доставка по Харькову",
-    list: [
-      "Бесплатная доставка от 300 ₴",
-      "Привозим в среднем за 35 минут",
-      "Работаем ежедневно с 11:00 до 23:00"
-    ]
   },
   {
-    title: "Оплата",
-    list: [
-      "Картой на сайте",
-      "Курьеру наличными",
-      "Курьеру картой"
-    ]
-  }
-];
+    title: "Каліфорнія з креветкою в кунжуті",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-kaliforniya-z-krevetkoyu-v-kunzhuti.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 179,
+    weight: 240,
+    description: "Рис, креветка, омлет, огірок, кунжут, соус унагі, норі"
+  },
+  {
+    title: "Футомакі з лососем (гострий)",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-futomaki-z-lososem-gostr.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 229,
+    weight: 260,
+    description: "Рис, лосось, соус Шрірача, салат айсберг, огірок, крабовий мікс, норі"
+  },
+  {
+    title: "Кранч з креветкою",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-kranch-z-krevetkoyu-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 249,
+    "oldPrice": 299,
+    weight: 250,
+    description: "Рис, креветка темпура, ікра тобіко, кляр темпура, огірок, соус унагі, норі"
+  },
+  {
+    title: "Філадельфія з лососем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-filadelfiya-z-lososem.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 299,
+    "oldPrice": 329,
+    weight: 270,
+    description: "Рис, лосось, крем сир, авокадо, огірок, норі"
+  },
+  {
+    title: "Філадельфія дует",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-filadelfiya-duet.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 269,
+    weight: 280,
+    description: "Рис, лосось, тунець, крем сир, огірок, соус горіховий унагі, норі, кунжут"
+  },
+  {
+    title: "Ебі Рол",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0005-ebi-rol.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 209,
+    weight: 260,
+    description: "Рис, креветка темпура, крем сир, салат айсберг, огірок, ікра тобіко, соус світ чилі, соус горіховий (гострий), кунжут чорний, норі"
+  },
+  {
+    title: "Каліфорнія з лососем в кунжуті",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-kaliforniya-z-lososem-v-kunzhuti-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 199,
+    weight: 230,
+    description: "Рис, лосось, авокадо, огірок, кунжут, норі"
+  },
+  {
+    title: "Запечений з крабовим міксом",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-zapechenij-z-krabovim-miksom.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 159,
+    weight: 280,
+    description: "Рис, крабовий мікс, салат айсберг, сирний соус, болгарський перець, кунжут, огірок, норі"
+  },
+  {
+    title: "Ніжний з куркою",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-nizhnyy-z-kurkoyu-2023.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 179,
+    weight: 270,
+    description: "Рис, куряче філе, сирний соус, салат айсберг, крем сир, соус унагі, норі"
+  },
+  {
+    title: "Запечений з креветкою",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-zapechenij-z-krevetkoyu.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 209,
+    weight: 300,
+    description: "Рис, креветка темпура, салат айсберг, сирний соус, болгарський перець, кунжут, огірок, норі"
+  },
+  {
+    title: "Ніжний з лососем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-nizhnij-z-lososem-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 209,
+    weight: 270,
+    description: "Рис, лосось, сирний соус, салат айсберг, крем сир, соус унагі, норі"
+  },
+  {
+    title: "Філадельфія з тунцем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-filadelfiya-z-tuncem.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 269,
+    weight: 270,
+    description: "Рис, тунець, крем сир, авокадо, огірок, норі"
+  },
+  {
+    title: "Філадельфія з креветкою",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-filadelfiya-z-krevetkoyu-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 269,
+    weight: 260,
+    description: "Рис, креветка, огірок, авокадо, крем сир, ікра тобіко, соус cвіт чилі, кунжут, норі"
+  },
+  {
+    title: "Філадельфія з вугрем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-filadelfiya-z-vugrem-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 359,
+    weight: 270,
+    description: "Рис, вугор, авокадо, крем сир, огірок, соус унагі, кунжут, норі"
+  },
+  {
+    title: "Філадельфія з копченим лососем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-filadelfiya-z-kopchenim-lososem.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 289,
+    weight: 260,
+    description: "Рис, копчений лосось, крем сир, авокадо, огірок, норі"
+  },
+  {
+    title: "Темпура рол з куркою",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0004-tempura-rol-z-kurkoyu.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 159,
+    weight: 270,
+    description: "Рис, копчена курка, крем сир, кляр темпура, огірок, перець болгарський, соус горіховий унагі, сухарі панко, норі"
+  },
+  {
+    title: "Темпура рол з вугрем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-tempura-z-vugrem.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 269,
+    weight: 250,
+    description: "Рис, вугор, ікра тобіко, крем сир, огірок, соус унагі, сухарі панко, кляр темпура, норі"
+  },
+  {
+    title: "Каліфорнія темпура",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-kaliforniya-tempura-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 159,
+    weight: 270,
+    description: "Рис, крабовий мікс, кляр темпура, авокадо, огірок, сухарі панко, болгарський перець, норі"
+  },
+  {
+    title: "Темпура рол з лососем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-tempura-z-lososem.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 249,
+    weight: 200,
+    description: "Рис, лосось, краб мікс, авокадо, кляр темпура, соус світ чилі, сухарі панко, кунжут, норі"
+  },
+  {
+    title: "Темпура рол з тунцем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-tempura-z-tuncem.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 249,
+    weight: 200,
+    description: "Рис, тунець, краб мікс, авокадо, кляр темпура, соус світ чилі, сухарі панко, кунжут, норі"
+  },
+  {
+    title: "Запечений з лососем (гострий)",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-zapechenij-z-lososem-gostrij.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 209,
+    weight: 280,
+    description: "Рис, салат айсберг, лосось, сирний соус, крем сир, соус Шрірача, огірок, нор, кунжут"
+  },
+  {
+    title: "Запечений з тунцем (гострий)",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-zapechenij-z-tuncem-gostrij.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 209,
+    weight: 280,
+    description: "Рис, салат айсберг, тунець, сирний соус, крем сир, соус Шрірача, огірок, норі, кунжут"
+  },
+  {
+    title: "Ніжний з вугрем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-nizhnij-z-vugrem-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 249,
+    "oldPrice": 279,
+    weight: 270,
+    description: "Рис, вугор, сирний соус, салат айсберг, крем сир, соус унагі, норі"
+  },
+  {
+    title: "Кранч з тунцем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0001-kranch-z-tuncem.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 199,
+    weight: 250,
+    description: "Рис, тунець консервований, ікра тобіко, кляр темпура, салат айсберг, соус унагі, соус світ чилі, норі"
+  },
+  {
+    title: "Філадельфія Ф'южн",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-filadelfiya-fyuzhn-2023.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 269,
+    weight: 260,
+    description: "Рис, вугор, крабовий мікс, огірок, салат айсберг, варена креветка, кранч, соус горіховий унагі, кунжут чорний, норі"
+  },
+  {
+    title: "Філадельфія Хіяші",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-filadelfiya-hiyashi-2023.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 269,
+    weight: 280,
+    description: "Рис, лосось, крем сир, салат айсберг, хіяші вакаме, соус горіховий (гострий), кунжут чорний, норі"
+  },
+  {
+    title: "Рол з лососем та огірком",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-z-lososem-ta-ogirkom.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 269,
+    weight: 280,
+    description: "Рис, огірок, лосось, кунжут, кранч, крабовий мікс, соус світ чилі, норі"
+  },
+  {
+    title: "Філадельфія Гурман",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-filadelfiya-gurman-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 429,
+    weight: 290,
+    description: "Рис, лосось, вугор, ікра тобіко, крем сир, норі"
+  },
+  {
+    title: "Золотий дракон",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-zolotij-drakon-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 359,
+    "oldPrice": 419,
+    weight: 270,
+    description: "Рис, вугор, авокадо, огірок, кунжут, крабовий мікс, соус унагі, норі"
+  },
+  {
+    title: "Зелений Дракон",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0004-rol-zelenij-drakon.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 329,
+    weight: 280,
+    description: "Рис, огірок, вугор, авокадо, кунжут, крабовий мікс, соус унагі, норі"
+  },
+  {
+    title: "Червоний Дракон",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0004-rol-chervonij-drakon.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 329,
+    weight: 280,
+    description: "Рис, лосось, авокадо, огірок, майонез, крабовий мікс, ікра тобіко, норі"
+  },
+  {
+    title: "Роял Рол",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0004-royal-rol.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 179,
+    weight: 260,
+    description: "Рис, копчена курка, салат айсберг, огірок, перець болгарський, соус світ чилі, кунжут, норі"
+  },
+  {
+    title: "Філадельфія з креветкою в кунжуті",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-filadelfiya-z-krevetkoyu-v-kunzhuti.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 199,
+    weight: 250,
+    description: "Рис, креветка темпура, крем сир, авокадо, огірок, кунжут, норі"
+  },
+  {
+    title: "Філадельфія з тунцем в кунжуті",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-filadelfiya-z-tuncem-v-kunzhuti.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 219,
+    weight: 260,
+    description: "Рис, тунець, крем сир,авокадо, кунжут, огірок, норі"
+  },
+  {
+    title: "Філадельфія з лососем в кунжуті",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0006-rol-filadelfiya-z-lososem-v-kunzhuti.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 229,
+    weight: 260,
+    description: "Рис, лосось, крем сир, авокадо, кунжут, огірок, норі"
+  },
+  {
+    title: "Філадельфія з вугрем в кунжуті",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-filadelfiya-z-vugrem-v-kunzhuti.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 269,
+    weight: 250,
+    description: "Рис, вугор, крем сир, авокадо, кунжут, огірок, норі"
+  },
+  {
+    title: "Філадельфія з копченим лососем в кунжуті",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-filadelfiya-z-kopchenim-lososem-v-kunzhuti.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 219,
+    weight: 250,
+    description: "Рис, копчений лосось, крем сир, авокадо, кунжут, огірок, норі"
+  },
+  {
+    title: "Каліфорнія з копченим лососем в кунжуті",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-kaliforniya-z-kopchenim-lososem-v-kunzhuti-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 199,
+    weight: 220,
+    description: "Рис, копчений лосось, авокадо, огірок, кунжут, норі"
+  },
+  {
+    title: "Каліфорнія з лососем в ікрі",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-kaliforniya-z-lososem-v-ikri-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 259,
+    "oldPrice": 279,
+    weight: 230,
+    description: "Рис, лосось, авокадо, огірок, ікра тобіко, норі"
+  },
+  {
+    title: "Каліфорнія з крабовим міксом в кунжуті",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-kaliforniya-z-krabovim-miksom-v-kunzhuti-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 129,
+    weight: 230,
+    description: "Рис, крабовий мікс, авокадо, огірок, кунжут, норі"
+  },
+  {
+    title: "Каліфорнія з крабовим міксом в ікрі",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-kaliforniya-z-krabovim-miksom-v-ikri-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 199,
+    weight: 230,
+    description: "Рис, крабовий мікс, авокадо, огірок, ікра тобіко, норі"
+  },
+  {
+    title: "Каліфорнія з вугрем в кунжуті",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-kaliforniya-z-vugrem-v-kunzhuti-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 199,
+    weight: 240,
+    description: "Рис, вугор, омлет, огірок, кунжут, соус унагі, норі"
+  },
+  {
+    title: "Каліфорнія Чікен",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-kaliforniya-chiken.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 139,
+    weight: 240,
+    description: "Рис, копчена курка, омлет, огірок, кунжут, соус горіховий унагі, норі"
+  },
+  {
+    title: "Футомакі з креветкою в темпурі",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-futomaki-z-krevetkoyu-v-tempuri-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 199,
+    "oldPrice": 229,
+    weight: 260,
+    description: "Рис, креветка темпура, крем сир, огірок, болгарський перець, норі"
+  },
+  {
+    title: "Футомакі з тунцем (гострий)",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0001-futomaki-z-tuncem-gostrij.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 179,
+    weight: 250,
+    description: "Рис, тунець консервований, салат айсберг, перець болгарський, цибуля зелена, омлет, кляр темпура, соус Шрирача, соус світ чилі"
+  },
+  {
+    title: "Торі Рол (гострий)",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-tori-rol.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 159,
+    weight: 240,
+    description: "Рис, копчена курка, салат айсберг, огірок, цибуля зелена, майонез, соус Шрірача, норі"
+  },
+  {
+    title: "Фелікс рол з лососем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-feliks-z-lososem-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 219,
+    weight: 240,
+    description: "Рис, фелікс з лососем, кунжут, салат айсберг, огірок, норі, майонез"
+  },
+  {
+    title: "Фелікс рол з копченим лососем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-feliks-z-kopchenim-lososem-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 219,
+    weight: 240,
+    description: "Рис, фелікс з копченим лососем, кунжут, салат айсберг, огірок, норі, майонез"
+  },
+  {
+    title: "Фелікс рол з тунцем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-feliks-z-tuncem.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 179,
+    weight: 240,
+    description: "Рис, фелікс з тунцем, кунжут, салат айсберг, огірок, норі, майонез"
+  },
+  {
+    title: "Фелікс рол Магуро",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0001-feliks-rol-maguro.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 169,
+    weight: 230,
+    description: "Рис, тунець консервований, салат айсберг, чилі нитка, цибуля зелена, кунжут чорний, норі"
+  },
+  {
+    title: "Макі з лососем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-maki-z-lososem-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 129,
+    weight: 130,
+    description: "Рис, лосось, норі"
+  },
+  {
+    title: "Макі з лососем та авокадо",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0001-maki-z-lososiem-ta-avokado.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 129,
+    weight: 130,
+    description: "Рис, лосось, авокадо, норі"
+  },
+  {
+    title: "Макі з вугрем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-maki-z-vugrem-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 159,
+    weight: 130,
+    description: "Рис, вугор, норі"
+  },
+  {
+    title: "Макі з тунцем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-maki-z-tuncem.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 119,
+    weight: 130,
+    description: "Рис, тунець, норі"
+  },
+  {
+    title: "Макі з креветкою",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-rol-maki-z-krevetkoyu-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 109,
+    weight: 130,
+    description: "Рис, креветка темпура, норі"
+  },
+  {
+    title: "Макі з авокадо",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-rol-maki-z-avokado-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 89,
+    weight: 130,
+    description: "Рис, авокадо, норі"
+  },
+  {
+    title: "Макі з огірком",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-maki-z-ohirkom-2023.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 59,
+    weight: 130,
+    description: "Рис, огірок, норі"
+  },
+  {
+    title: "Суші гункан з лососем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-gunkan-z-lososem-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 109,
+    weight: 802,
+    description: "Рис, лосось, майонез, ікра тобіко, норі"
+  },
+  {
+    title: "Суші гункан з вугрем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-gunkan-z-vugrem-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 149,
+    weight: 802,
+    description: "Рис, вугор, майонез, ікра тобіко, норі"
+  },
+  {
+    title: "Суші гункан з тунцем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-gunkan-z-tuncem-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 109,
+    weight: 802,
+    description: "Рис, тунець, майонез, ікра тобіко, норі"
+  },
+  {
+    title: "Суші гункан з креветкою",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-gunkan-z-krevetkoyu-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 139,
+    weight: 802,
+    description: "Рис, креветка, майонез, ікра тобіко, норі"
+  },
+  {
+    title: "Суші нігірі з лососем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-nigiri-z-lososem.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 119,
+    weight: 602,
+    description: "Рис, лосось"
+  },
+  {
+    title: "Суші нігірі з тунцем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-nigiri-z-tuncem.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 89,
+    weight: 602,
+    description: "Рис, тунець"
+  },
+  {
+    title: "Суші нігірі з вугрем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-nigiri-z-vugrem.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 149,
+    weight: 652,
+    description: "Рис, вугор, соус унагі, кунжут"
+  },
+  {
+    title: "Суші нігірі з креветкою",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-nigiri-z-krevetkoyu.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.rolls,
+    price: 89,
+    weight: 502,
+    description: "Рис, квеветка"
+  },
+  {
+    "title": "Суші гункан з лососем",
+    "img": "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-gunkan-z-lososem-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    "foodType": "sush1",
+    "price": 109,
+    "weight": 802,
+    "description": "Рис, лосось, майонез, ікра тобіко, норі"
+  },
+  {
+    "title": "Суші гункан з вугрем",
+    "img": "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-gunkan-z-vugrem-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    "foodType": "sush1",
+    "price": 149,
+    "weight": 802,
+    "description": "Рис, вугор, майонез, ікра тобіко, норі"
+  },
+  {
+    "title": "Суші гункан з тунцем",
+    "img": "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-gunkan-z-tuncem-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    "foodType": "sush1",
+    "price": 109,
+    "weight": 802,
+    "description": "Рис, тунець, майонез, ікра тобіко, норі"
+  },
+  {
+    "title": "Суші гункан з креветкою",
+    "img": "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-gunkan-z-krevetkoyu-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    "foodType": "sush1",
+    "price": 139,
+    "weight": 802,
+    "description": "Рис, креветка, майонез, ікра тобіко, норі"
+  },
+  {
+    "title": "Суші нігірі з вугрем",
+    "img": "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-nigiri-z-vugrem.jpg?&w=650&format=auto&mode=fit&q=80",
+    "foodType": "sush1",
+    "price": 149,
+    "weight": 652,
+    "description": "Рис, вугор, соус унагі, кунжут"
+  },
+  {
+    "title": "Суші нігірі з креветкою",
+    "img": "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-nigiri-z-krevetkoyu.jpg?&w=650&format=auto&mode=fit&q=80",
+    "foodType": "sush1",
+    "price": 89,
+    "weight": 502,
+    "description": "Рис, квеветка"
+  },
+  {
+    "title": "Суші нігірі з тунцем",
+    "img": "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-nigiri-z-tuncem.jpg?&w=650&format=auto&mode=fit&q=80",
+    "foodType": "sush1",
+    "price": 89,
+    "weight": 602,
+    "description": "Рис, тунець"
+  },
+  {
+    "title": "Суші нігірі з лососем",
+    "img": "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-nigiri-z-lososem.jpg?&w=650&format=auto&mode=fit&q=80",
+    "foodType": "sush1",
+    "price": 119,
+    "weight": 602,
+    "description": "Рис, лосось"
+  },

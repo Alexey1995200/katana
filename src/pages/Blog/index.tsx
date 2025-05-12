@@ -1,13 +1,13 @@
 import './styles.scss'
 import {DesktopPrimaryBanner} from "../../components/layout/Blog/DesktopPrimaryBanner";
-import {bannersArr, primaryBanner} from "../../components/const";
+import {bannersArr, primaryBanner} from "../../const";
 import {useEffect, useState} from "react";
 import {Banner} from "../../components/layout/Blog/Banner";
 import {Button} from "../../components/button";
 import {arrBack, arrowDownMore} from "../../assets";
 import {NavHistory} from "../../components/NavHistory";
 import {CurrentSet} from "./CurrentSet";
-import {IBlogItem} from "../../components/interface";
+import {IBlogItem} from "../../interface";
 
 const BlogPage = () => {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth < 768);

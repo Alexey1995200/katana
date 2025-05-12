@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import './styles.scss'
 import {cart} from "../../../assets";
-import {categoryList} from "../../const";
+import {categoryList} from "../../../const";
 
 let money = 512
 

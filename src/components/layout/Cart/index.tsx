@@ -1,8 +1,8 @@
 import './styles.scss'
 import {bin, emptyCart} from "../../../assets";
 import {useEffect, useState} from "react";
-import {food} from "../../const";
-import {IMenuItem} from "../../interface";
+import {food} from "../../../const";
+import {IMenuItem} from "../../../interface";
 import {QuantitySelector} from "../../QuantitySelector";
 import {Button} from "../../button";
 import {MobileWhiteHeader} from "../MobileWhiteHeader";

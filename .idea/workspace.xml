@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="179b2a66-1950-40e6-8db9-40d8811725cb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/db.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/const.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/const.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/interface.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/interface.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/const.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/const.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/interface.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/interface.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Blog/Banner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Blog/Banner/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Blog/DesktopPrimaryBanner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Blog/DesktopPrimaryBanner/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Cart/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Cart/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Main/dishBanner_adaptive/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Main/dishBanner_adaptive/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Main/dishBanner_fixed/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Main/dishBanner_fixed/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/MenuCategoryList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/MenuCategoryList/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Blog/CurrentSet/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog/CurrentSet/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Blog/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Blog/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Contacts/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contacts/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Delivery/info/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Delivery/info/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,11 +90,11 @@
       <recent name="C:\Users\alexe\Documents\GitHub\katana\src\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alexe\Documents\GitHub\katana\src" />
       <recent name="C:\Users\alexe\Documents\GitHub\katana\src\assets\png\banners" />
       <recent name="C:\Users\alexe\Documents\GitHub\katana\src\components\layout\Main" />
       <recent name="C:\Users\alexe\Documents\GitHub\katana\src\assets\fonts" />
       <recent name="C:\Users\alexe\Documents\GitHub\katana\src\pages" />
-      <recent name="C:\Users\alexe\Documents\GitHub\katana\src\assets\jpeg" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -123,7 +135,7 @@
       <workItem from="1745817386708" duration="1555000" />
       <workItem from="1745989502830" duration="1792000" />
       <workItem from="1746176749392" duration="51887000" />
-      <workItem from="1746606421925" duration="5130000" />
+      <workItem from="1746606421925" duration="10046000" />
     </task>
     <servers />
   </component>
