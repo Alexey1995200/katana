@@ -1131,66 +1131,187 @@ export const food: IMenuItem[] = [
     description: "Рис, квеветка"
   },
   {
-    "title": "Суші гункан з лососем",
-    "img": "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-gunkan-z-lososem-new.jpg?&w=650&format=auto&mode=fit&q=80",
-    "foodType": "sush1",
-    "price": 109,
-    "weight": 802,
-    "description": "Рис, лосось, майонез, ікра тобіко, норі"
+    title: "Суші гункан з лососем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-gunkan-z-lososem-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.sushi,
+    price: 109,
+    weight: 802,
+    description: "Рис, лосось, майонез, ікра тобіко, норі"
   },
   {
-    "title": "Суші гункан з вугрем",
-    "img": "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-gunkan-z-vugrem-new.jpg?&w=650&format=auto&mode=fit&q=80",
-    "foodType": "sush1",
-    "price": 149,
-    "weight": 802,
-    "description": "Рис, вугор, майонез, ікра тобіко, норі"
+    title: "Суші гункан з вугрем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-gunkan-z-vugrem-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.sushi,
+    price: 149,
+    weight: 802,
+    description: "Рис, вугор, майонез, ікра тобіко, норі"
   },
   {
-    "title": "Суші гункан з тунцем",
-    "img": "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-gunkan-z-tuncem-new.jpg?&w=650&format=auto&mode=fit&q=80",
-    "foodType": "sush1",
-    "price": 109,
-    "weight": 802,
-    "description": "Рис, тунець, майонез, ікра тобіко, норі"
+    title: "Суші гункан з тунцем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-gunkan-z-tuncem-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.sushi,
+    price: 109,
+    weight: 802,
+    description: "Рис, тунець, майонез, ікра тобіко, норі"
   },
   {
-    "title": "Суші гункан з креветкою",
-    "img": "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-gunkan-z-krevetkoyu-new.jpg?&w=650&format=auto&mode=fit&q=80",
-    "foodType": "sush1",
-    "price": 139,
-    "weight": 802,
-    "description": "Рис, креветка, майонез, ікра тобіко, норі"
+    title: "Суші гункан з креветкою",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-gunkan-z-krevetkoyu-new.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.sushi,
+    price: 139,
+    weight: 802,
+    description: "Рис, креветка, майонез, ікра тобіко, норі"
   },
   {
-    "title": "Суші нігірі з вугрем",
-    "img": "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-nigiri-z-vugrem.jpg?&w=650&format=auto&mode=fit&q=80",
-    "foodType": "sush1",
-    "price": 149,
-    "weight": 652,
-    "description": "Рис, вугор, соус унагі, кунжут"
+    title: "Суші нігірі з вугрем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-nigiri-z-vugrem.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.sushi,
+    price: 149,
+    weight: 652,
+    description: "Рис, вугор, соус унагі, кунжут"
   },
   {
-    "title": "Суші нігірі з креветкою",
-    "img": "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-nigiri-z-krevetkoyu.jpg?&w=650&format=auto&mode=fit&q=80",
-    "foodType": "sush1",
-    "price": 89,
-    "weight": 502,
-    "description": "Рис, квеветка"
+    title: "Суші нігірі з креветкою",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-nigiri-z-krevetkoyu.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.sushi,
+    price: 89,
+    weight: 502,
+    description: "Рис, квеветка"
   },
   {
-    "title": "Суші нігірі з тунцем",
-    "img": "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-nigiri-z-tuncem.jpg?&w=650&format=auto&mode=fit&q=80",
-    "foodType": "sush1",
-    "price": 89,
-    "weight": 602,
-    "description": "Рис, тунець"
+    title: "Суші нігірі з тунцем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-nigiri-z-tuncem.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.sushi,
+    price: 89,
+    weight: 602,
+    description: "Рис, тунець"
   },
   {
-    "title": "Суші нігірі з лососем",
-    "img": "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-nigiri-z-lososem.jpg?&w=650&format=auto&mode=fit&q=80",
-    "foodType": "sush1",
-    "price": 119,
-    "weight": 602,
-    "description": "Рис, лосось"
+    title: "Суші нігірі з лососем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-sushi-nigiri-z-lososem.jpg?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.sushi.sushi,
+    price: 119,
+    weight: 602,
+    description: "Рис, лосось"
   },
+  {
+    title: "Місо суп з лососем",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-miso_sup_z_lososem.png?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.soup,
+    price: 99,
+    weight: 200,
+    description: "Місо бульйон, лосось, вакаме, кунжут, зелена цибуля"
+  },
+  {
+    title: "Місо суп класичний",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-miso_sup_klasychnyy.png?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.soup,
+    price: 79,
+    weight: 190,
+    description: "Місо бульйон, вакаме, кунжут, зелена цибуля"
+  },
+  {
+    title: "Локшина удон з куркою",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-lokshyna_udon_z_kurkoyu-2023.png?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.wok,
+    price: 189,
+    weight: 340,
+    description: "Локшина удон, куряче філе, броколі, спаржа, цибуля ріпчаста, морква, перець болгарський, часник, соус Устричний, цибуля зелена"
+  },
+  {
+    title: "Локшина удон з креветками",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-lokshyna_udon_z_moreproduktamy-2023.png?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.wok,
+    price: 229,
+    weight: 340,
+    description: "Локшина удон, креветки, брокколі, спаржа, цибуля ріпчаста, морква, перець болгарський, часник, соус Пеппер, кунжут"
+  },
+  {
+    title: "Локшина удон з овочами",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-lokshyna_udon_z_ovochamy-2023.png?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.wok,
+    price: 169,
+    weight: 340,
+    description: "Локшина удон, брокколі, спаржа, цибуля ріпчаста, морква, перець болгарський, часник, соус Устричний, кунжут"
+  },
+  {
+    title: "Локшина рисова з куркою",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-lokshyna_rysova_z_kurkoyu-2023.png?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.wok,
+    price: 189,
+    weight: 340,
+    description: "Локшина фунчоза, куряче філе, броколі, спаржа, цибуля ріпчаста, морква, перець болгарський, часник, соус Устричний, цибуля зелена"
+  },
+  {
+    title: "Локшина рисова з креветками",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-lokshina-risova-z-krevetkami-2023.png?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.wok,
+    price: 229,
+    weight: 340,
+    description: "Локшина фунчоза, креветки, броколі, спаржа, цибуля ріпчаста, морква, перець болгарський, часник, соус Пеппер, кунжут"
+  },
+  {
+    title: "Локшина рисова з овочами",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-lokshyna_rysova_z_ovochamy_2023.png?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.wok,
+    price: 169,
+    weight: 340,
+    description: "Локшина фунчоза, броколі, спаржа, цибуля ріпчаста, морква, перець болгарський, часник, соус Устричний, кунжут"
+  },
+  {
+    title: "Рис з куркою",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-rys_z_kurkoyu-2023.png?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.wok,
+    price: 159,
+    weight: 300,
+    description: "Рис, куряче філе, броколі, спаржа, цибуля ріпчаста, морква, перець болгарський, часник, соус соєвий, цибуля зелена, омлет, Хондаші, кунжут"
+  },
+  {
+    title: "Рис з креветками",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-ris-z-krevetkami.png?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.wok,
+    price: 229,
+    weight: 300,
+    description: "Рис, креветки, броколі, спаржа, цибуля ріпчаста, морква, перець болгарський, часник, соус соєвий, цибуля зелена, омлет, Хондаші, кунжут"
+  },
+  {
+    title: "Рис з овочами",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-rys_z_ovochamy-2023.png?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.wok,
+    price: 139,
+    weight: 300,
+    description: "Рис, броколі, спаржа, цибуля ріпчаста, морква, перець болгарський, часник, соус соєвий, цибуля зелена, омлет, Хондаші, кунжут"
+  },
+  {
+    title: "Курячі стріпси",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-kuryachi_stripsy-2023.png?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.snack,  
+    price: 149,
+    weight: 180,
+    description: "Куряче філе, яйце, панірувальні сухарі, борошно темпура, сіль, перець, соус горіховий (гострий)"
+  },
+  {
+    title: "Моцарела фрі",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-motsarela_fri-2023.png?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.snack,  
+    price: 159,
+    weight: 200,
+    description: "Моцарела, яйце, панірувальні сухарі,борошно темпура, соус горіховий (гострий)"
+  },
+  {
+    title: "Салат Чука (Хіяші Вакаме)",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0003-salat_khiyashi_vakame.png?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.salad, 
+    price: 129,
+    weight: 110,
+    description: "Водорості хіяші вакаме, смажений кунжут, соус горіховий"
+  },
+  {
+    title: "Рисові чипси",
+    img: "https://cdn.sushi-master.ua/sm-ua/products/0002-rysovi_chipsy.png?&w=650&format=auto&mode=fit&q=80",
+    foodType: FOOD_TYPES.snack, 
+    price: 59,
+    weight: 50,
+    description: "Рисові чипси"
+  }
+]
