@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import './clean_style.css'
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {createBrowserRouter, createHashRouter, RouterProvider} from "react-router-dom";
 import Layout from "./components/layout";
 import {ErrorPage} from "./components/err";
 import Main from "./pages/Main";
@@ -10,8 +10,8 @@ import BlogPage from "./pages/Blog";
 import DeliveryPage from "./pages/Delivery";
 import Contacts from "./pages/Contacts";
 
-
-const router = createBrowserRouter([
+const isGitHubPages = window.location.hostname.includes("github.io");
+const routes = [
   {
     element: <Layout/>,
     errorElement: <ErrorPage/>,
@@ -31,7 +31,11 @@ const router = createBrowserRouter([
       // }
     ],
   },
-]);
+]
+
+const router = isGitHubPages
+  ? createHashRouter(routes)
+  : createBrowserRouter(routes);
 
 export const App = () => {
   return <RouterProvider router={router}/>;

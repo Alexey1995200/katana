@@ -1,7 +1,7 @@
 import './styles.scss'
 import {bin, emptyCart} from "../../../assets";
 import {useEffect, useState} from "react";
-import {food} from "../../../const";
+import {food} from "../../../db"
 import {IMenuItem} from "../../../interface";
 import {QuantitySelector} from "../../QuantitySelector";
 import {Button} from "../../button";
