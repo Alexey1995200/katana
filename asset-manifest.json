@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/katana/static/css/main.cd1b4102.css",
-    "main.js": "/katana/static/js/main.c7a21674.js",
+    "main.js": "/katana/static/js/main.89e92411.js",
     "static/media/img.png": "/katana/static/media/img.c2ffc6046a0b69469fa8.png",
     "static/media/img_2.png": "/katana/static/media/img_2.790d70cd89e28d8cbcd6.png",
     "static/media/img_6.png": "/katana/static/media/img_6.4e566fa0a4583e164ffc.png",
@@ -91,10 +91,10 @@
     "static/media/phone.svg": "/katana/static/media/phone.3caaf74efa82725dbe3b79265da0655b.svg",
     "static/media/arrowDown.svg": "/katana/static/media/arrowDown.f80fc2e5d4312f503f1dab4eaa4beab9.svg",
     "main.cd1b4102.css.map": "/katana/static/css/main.cd1b4102.css.map",
-    "main.c7a21674.js.map": "/katana/static/js/main.c7a21674.js.map"
+    "main.89e92411.js.map": "/katana/static/js/main.89e92411.js.map"
   },
   "entrypoints": [
     "static/css/main.cd1b4102.css",
-    "static/js/main.c7a21674.js"
+    "static/js/main.89e92411.js"
   ]
 }
